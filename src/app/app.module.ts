@@ -3,8 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {MovimientoartisticoModule} from './movimientoartistico/movimientoartistico.module';
 
+import { ArtistaModule } from './artista/artista.module';
+import {MovimientoartisticoModule} from './movimientoartistico/movimientoartistico.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import {MovimientoartisticoModule} from './movimientoartistico/movimientoartisti
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MovimientoartisticoModule
+    MovimientoartisticoModule,
+    ArtistaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
