@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 import { ArtistaModule } from './artista/artista.module';
 import {MovimientoartisticoModule} from './movimientoartistico/movimientoartistico.module';
+import {PaisModule} from './pais/pais.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {MovimientoartisticoModule} from './movimientoartistico/movimientoartisti
     BrowserModule,
     AppRoutingModule,
     MovimientoartisticoModule,
-    ArtistaModule
+    ArtistaModule,
+    PaisModule
   ],
   providers: [],
   bootstrap: [AppComponent]
