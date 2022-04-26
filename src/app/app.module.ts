@@ -11,6 +11,7 @@ import {MovimientoartisticoModule} from './movimientoartistico/movimientoartisti
 import { CiudadModule } from './ciudad/ciudad.module';
 
 
+import {PaisModule} from './pais/pais.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CiudadModule } from './ciudad/ciudad.module';
     MovimientoartisticoModule,
     ArtistaModule,
     CiudadModule,
-    HttpClientModule
+    HttpClientModule,
+    PaisModule
   ],
   providers: [],
   bootstrap: [AppComponent]
