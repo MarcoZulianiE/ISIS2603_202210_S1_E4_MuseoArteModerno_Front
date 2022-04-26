@@ -1,0 +1,16 @@
+<p>
+  ciudad-list works!
+</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col mb-2" *ngFor="let ciudad of ciudades">
+          <div class="card p-2" style="width: 15rem; height: 33rem">
+
+              <div class="card-body">
+                <h5 class="card-title">{{ ciudad.nombre }}</h5>
+                  <p class="card-text">[{{ ciudad.nombre }}]</p>
+              </div>
+           </div>
+      </div>
+   </div>
+</div>
