@@ -10,6 +10,7 @@ import {MovimientoartisticoModule} from './movimientoartistico/movimientoartisti
 import { CiudadModule } from './ciudad/ciudad.module';
 import {PaisModule} from './pais/pais.module';
 import { MuseoModule } from './museo/museo.module';
+import { ObraModule } from './obra/obra.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { MuseoModule } from './museo/museo.module';
     MovimientoartisticoModule,
     ArtistaModule,
     CiudadModule,
+    ObraModule,
     HttpClientModule,
     PaisModule,
     MuseoModule,
