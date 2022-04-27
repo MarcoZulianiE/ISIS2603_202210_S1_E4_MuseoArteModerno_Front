@@ -23,8 +23,7 @@ import { MuseoModule } from './museo/museo.module';
     CiudadModule,
     HttpClientModule,
     PaisModule,
-    MuseoModule,
-    HttpClientModule
+    MuseoModule
   ],
   providers: [],
   bootstrap: [AppComponent]

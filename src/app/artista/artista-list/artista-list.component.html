@@ -1,3 +1,18 @@
-<p>
-  artista-list works!
-</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col mb-2" *ngFor="let artista of artistas">
+          <div class="card p-2" style="width: 15rem; height: 24rem">
+              <img
+                class="card-img-top"
+                src="{{ artista.imagen }}"
+                alt="{{ artista.nombre }}"
+              />
+              <div class="card-body">
+                <h5 class="card-title">{{ artista.nombre }}</h5>
+                  <p class="card-text">Nacimiento: {{ artista.fechaNacimiento }}</p>
+                  <p class="card-text">Fallecimiento: {{ artista.fechaFallecimiento }}</p>
+              </div>
+           </div>
+      </div>
+   </div>
+</div>

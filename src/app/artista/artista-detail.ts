@@ -9,10 +9,10 @@ export class ArtistaDetail extends Artista{
   //obras: Array<Obra> = [];
   //museos: Array<Museo> = [];
 
-  constructor(id: number, nombre: string ,fechaNacimiento: Date, fechaFallecimiento: Date/*, lugarNacimiento: Pais, lugarFallecimiento: Pais*/
+  constructor(id: number, nombre: string ,imagen: string ,fechaNacimiento: Date, fechaFallecimiento: Date/*, lugarNacimiento: Pais, lugarFallecimiento: Pais*/
               , movimientos: Array<Movimientoartistico>/*, obras: Array<Obra>, museos: Array<Museo>*/)
   {
-    super(id, nombre, fechaNacimiento, fechaFallecimiento/*, lugarNacimiento, lugarFallecimiento*/);
+    super(id, nombre, imagen, fechaNacimiento, fechaFallecimiento/*, lugarNacimiento, lugarFallecimiento*/);
     this.movimientos = movimientos;
     //this.obras = obras;
     //this.museos = museos;

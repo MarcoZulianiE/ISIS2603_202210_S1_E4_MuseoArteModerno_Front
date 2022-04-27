@@ -11,7 +11,7 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class CiudadService {
-  private apiUrl = environment.baseURL + 'ciudades';
+  private apiUrl = environment.baseUrl + 'ciudades';
 
 constructor(private http: HttpClient) { }
 getCiudades(): Observable<Ciudad[]> {
