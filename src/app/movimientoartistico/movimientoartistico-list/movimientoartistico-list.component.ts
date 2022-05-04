@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MovimientoartisticoDetail } from '../movimientoartistico-detail';
+import { MovimientoartisticoService } from '../movimientoartistico.service';
 
 @Component({
   selector: 'app-movimientoartistico-list',
@@ -6,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./movimientoartistico-list.component.css']
 })
 export class MovimientoartisticoListComponent implements OnInit {
+  movimientos: Array<MovimientoartisticoDetail> = [];
 
-  constructor() { }
 
+  constructor(private movimientoService: MovimientoartisticoService) { }
+
+  getMovimientos(){
+    this.movimientoService.getMovimientosArtisticos().subscribe((recibidos) =>{
+      this.movimientos = recibidos;
+    });
+  }
   ngOnInit() {
+    this.getMovimientos();
   }
 
 }
