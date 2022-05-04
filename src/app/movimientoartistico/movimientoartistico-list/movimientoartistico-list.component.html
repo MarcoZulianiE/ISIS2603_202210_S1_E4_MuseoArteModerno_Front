@@ -1,3 +1,8 @@
+<h3>MOVIMIENTOS ARTISTICOS</h3>
+<div *ngIf = "selected">
+  <app-movimientoartistico-detalle [movimientoDetail]="selectedMovimiento"></app-movimientoartistico-detalle>
+</div>
+
 <div class="container-fluid">
   <div class="row">
     <div class="col mb-2" *ngFor="let movimiento of movimientos">
@@ -6,6 +11,7 @@
                 class="card-img-top"
                 src="{{ movimiento.imagen }}"
                 alt="{{ movimiento.nombre }}"
+                (click)= "onSelected(movimiento)"
               />
               <div class="card-body">
                 <h5 class="card-title">{{ movimiento.nombre }}</h5>

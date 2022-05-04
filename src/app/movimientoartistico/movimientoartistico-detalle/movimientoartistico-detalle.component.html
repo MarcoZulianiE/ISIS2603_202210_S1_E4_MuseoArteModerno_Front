@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <p class="h3 p-3">{{ movimientoDetail.nombre }}</p>
+  <div class="row">
+    <div class="col-2">
+      <div class="thumb">
+        <img
+          class="img-fluid"
+          src="{{ movimientoDetail.imagen }}"
+          alt="{{ movimientoDetail.nombre }}"
+        />
+      </div>
+    </div>
+    <div class="col">
+      <dl>
+        <dt>Fecha de Apogeo</dt>
+        <dd>{{movimientoDetail.fechaApogeo}}</dd>
+        <dt>Descripcion:</dt>
+        <dd>{{ movimientoDetail.descripcion}}</dd>
+        <hr />
+        <dt>Artistas</dt>
+        <dd>Por ahora nada</dd>
+        <hr />
+      </dl>
+    </div>
+  </div>
+ </div>
