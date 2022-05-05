@@ -2,11 +2,11 @@ import { Movimientoartistico } from "./movimientoartistico";
 import { Pais } from "../pais/pais";
 import {Artista} from "../artista/artista";
 import {Obra} from "../obra/obra";
-//import {Museo} from "../museo/museo";
+import {Museo} from "../museo/museo";
 
 export class MovimientoartisticoDetail extends Movimientoartistico{
  obras: Array<Obra> = [];
- //museos: Array<Museo> = [];
+ museos: Array<Museo> = [];
  artistias: Array<Artista> = [];
 
  constructor(pId: number,
@@ -16,7 +16,7 @@ export class MovimientoartisticoDetail extends Movimientoartistico{
   pFechaApogeo: Date,
   pObras: Array<Obra>,
   pArtistas: Array<Artista>,
-  //pMuseos: Array<Museo>,
+  pMuseos: Array<Museo>,
   pLugarOrigen: Pais
 
   )
@@ -26,6 +26,6 @@ export class MovimientoartisticoDetail extends Movimientoartistico{
       );
       this.obras = pObras;
       this.artistias = pArtistas;
-      //this.museos = pMuseos;
+      this.museos = pMuseos;
   }
 }
