@@ -7,7 +7,7 @@ import {Museo} from "../museo/museo";
 export class MovimientoartisticoDetail extends Movimientoartistico{
  obras: Array<Obra> = [];
  museos: Array<Museo> = [];
- artistias: Array<Artista> = [];
+ artistas: Array<Artista> = [];
 
  constructor(pId: number,
   pNombre: string,
@@ -25,7 +25,7 @@ export class MovimientoartisticoDetail extends Movimientoartistico{
       pLugarOrigen
       );
       this.obras = pObras;
-      this.artistias = pArtistas;
+      this.artistas = pArtistas;
       this.museos = pMuseos;
   }
 }
