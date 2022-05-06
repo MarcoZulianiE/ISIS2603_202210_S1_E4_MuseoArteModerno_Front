@@ -18,7 +18,9 @@
         <dd>{{ movimientoDetail.descripcion}}</dd>
         <hr />
         <dt>Artistas</dt>
-        <dd>Por ahora nada</dd>
+        <dd class="caption" *ngFor="let author of movimientoDetail.artistas">
+          {{ author.nombre }}
+         </dd>
         <hr />
       </dl>
     </div>

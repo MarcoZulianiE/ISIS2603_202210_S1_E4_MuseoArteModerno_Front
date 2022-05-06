@@ -18,6 +18,7 @@ export class MovimientoartisticoListComponent implements OnInit {
   onSelected(pMovimiento: MovimientoartisticoDetail):void{
     this.selected = true;
     this.selectedMovimiento = pMovimiento;
+    console.log(pMovimiento);
   }
   getMovimientos(){
     this.movimientoService.getMovimientosArtisticos().subscribe((recibidos) =>{
