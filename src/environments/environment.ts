@@ -3,10 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 const baseUrl = "http://localhost:8080/api/";
 
+
+
 export const environment = {
   production: false,
+  mapBoxToken: 'pk.eyJ1Ijoibmljb21iIiwiYSI6ImNsMnVoOWZpMzAxeTMzaXAycDNqemZtNGsifQ.jlCEwM8-hP22aGLzWCCGhg',
   baseUrl
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file
