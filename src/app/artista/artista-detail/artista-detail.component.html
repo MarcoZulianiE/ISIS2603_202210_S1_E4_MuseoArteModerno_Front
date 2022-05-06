@@ -1,0 +1,40 @@
+<div class="container-fluid">
+  <hr />
+  <div class="row">
+    <div class="col-2">
+      <p class="h4 text-align-center">*{{ artistaDetail.nombre }}*</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-2">
+      <div class="thumb">
+        <img class="img-fluid" src="{{ artistaDetail.imagen }}" alt="{{ artistaDetail.nombre }}" />
+      </div>
+    </div>
+    <div class="col">
+      <dl>
+        <dt>Nacimiento</dt>
+        <dd>{{artistaDetail.lugarNacimiento.nombrePais}} [{{artistaDetail.fechaNacimiento}}]</dd>
+        <dt>Fallecimiento:</dt>
+        <dd>{{ artistaDetail.lugarFallecimiento.nombrePais}} [{{artistaDetail.fechaFallecimiento}}]</dd>
+        <hr />
+        <dt>Obras</dt>
+        <div class="row">
+          <div class="col mb-2" *ngFor="let obra of artistaDetail.obras">
+            <div class="card p-2" style="width: 15rem; height: 24rem">
+              <img class="card-img-top obra"
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/The_Scream_by_Edvard_Munch%2C_1893_-_Nasjonalgalleriet.png"
+                alt="{{ obra.nombre }}" />
+              <div class="card-body">
+                <h5 class="card-title">{{ obra.nombre }}</h5>
+                <p class="card-text"> {{ obra.tipo }}</p>
+                <p class="card-text"> {{ obra.fechaPublicacion }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </dl>
+      </div>
+  </div>
+  <hr />
+</div>

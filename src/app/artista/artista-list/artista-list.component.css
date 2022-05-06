@@ -1,5 +1,9 @@
 img {
-  height: 250px;
-  width: auto;
-  max-width: 300px;
+  height: 14rem;
+  width: 14rem;
+}
+
+div.recurso {
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
 }

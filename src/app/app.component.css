@@ -1,3 +1,7 @@
 * [lang^=en] {
   color: green;
 }
+
+img.logo {
+  height: 5rem;
+}

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Artista } from '../artista';
+import { ArtistaDetail } from '../artista-detail';
 
 import { ArtistaService } from '../artista.service';
 
@@ -10,7 +10,10 @@ import { ArtistaService } from '../artista.service';
 })
 export class ArtistaListComponent implements OnInit {
 
-  artistas: Array<Artista> = [];
+  selected: Boolean = false;
+  selectedArtista!: ArtistaDetail;
+
+  artistas: Array<ArtistaDetail> = [];
 
   constructor(private artistaService: ArtistaService) { }
 
@@ -19,6 +22,11 @@ export class ArtistaListComponent implements OnInit {
       this.artistas = artistas;
       console.log(this.artistas)
     });
+  }
+
+  onSelected(artista: ArtistaDetail): void {
+    this.selected = true;
+    this.selectedArtista = artista;
   }
 
   ngOnInit() {
