@@ -11,7 +11,7 @@ const rootApi = 'api'
 export const environment = {
   production: true,
   mapBoxToken: 'pk.eyJ1Ijoibmljb21iIiwiYSI6ImNsMnVoOWZpMzAxeTMzaXAycDNqemZtNGsifQ.jlCEwM8-hP22aGLzWCCGhg',
-  baseUrl: `http://${host}:${port}/${rootApi}`
+  baseUrl: `http://${host}:${port}/${rootApi}/`
 };
 /*
  * For easier debugging in development mode, you can import the following file
