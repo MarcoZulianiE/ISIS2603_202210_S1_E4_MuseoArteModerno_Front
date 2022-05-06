@@ -1,17 +1,18 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
-const baseUrl = "http://localhost:8080/api/";
+const host = 'localhost'
+const port = '8080'
+const rootApi = 'api'
+//const appame =
 
 
 
 export const environment = {
-  production: false,
+  production: true,
   mapBoxToken: 'pk.eyJ1Ijoibmljb21iIiwiYSI6ImNsMnVoOWZpMzAxeTMzaXAycDNqemZtNGsifQ.jlCEwM8-hP22aGLzWCCGhg',
-  baseUrl
+  baseUrl: `http://${host}:${port}/${rootApi}`
 };
-
-
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
