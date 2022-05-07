@@ -18,7 +18,6 @@
       </div>
       <div class="col-2" (click)="onSelected('paises')">
         <h3>Paises</h3>
-        <app-map></app-map>
       </div>
       <div class="col-2"(click)="onSelected('ciudades')">
         <h3>Ciudades</h3>
@@ -40,6 +39,7 @@
   </div>
   <div *ngIf="categoria_mostrada == 'paises'">
     <app-pais-list></app-pais-list>
+    <app-map></app-map>
   </div>
   <div *ngIf="categoria_mostrada == 'ciudades'">
     <app-ciudad-list></app-ciudad-list>
