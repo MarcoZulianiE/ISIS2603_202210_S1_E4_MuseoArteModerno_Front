@@ -1,7 +1,209 @@
 <testExecutions version="1">
+  <file path="src/app/movimientoartistico/movimientoartistico-list/movimientoartistico-list.component.spec.ts">
+    <testCase name="MovimientoartisticoListComponent should create" duration="102">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[MovimientoartisticoService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'MovimientoartisticoService', 'HttpClient', 'HttpClient' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[MovimientoartisticoService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
+    at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
+    at Object.MovimientoartisticoService_Factory [as factory] (ng:///MovimientoartisticoService/ɵfac.js:4:54)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11457:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11276:1)
+    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21832:1)
+    at Object.get (node_modules/@angular/core/fesm2015/core.mjs:21509:1)
+
+Error: Expected undefined to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (src/app/movimientoartistico/movimientoartistico-list/movimientoartistico-list.component.spec.ts:26:23)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+    </testCase>
+  </file>
+  <file path="src/app/movimientoartistico/movimientoartistico.service.spec.ts">
+    <testCase name="Service: Movimientoartistico should ..." duration="10">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[MovimientoartisticoService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'MovimientoartisticoService', 'HttpClient', 'HttpClient' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[MovimientoartisticoService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
+    at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
+    at Object.MovimientoartisticoService_Factory [as factory] (ng:///MovimientoartisticoService/ɵfac.js:4:54)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11457:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11276:1)
+    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21832:1)
+    at TestBedRender3.inject (node_modules/@angular/core/fesm2015/testing.mjs:1719:1)
+</failure>
+    </testCase>
+  </file>
+  <file path="src/app/pais/pais-list/pais-list.component.spec.ts">
+    <testCase name="PaisListComponent should create" duration="36">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[PaisService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'PaisService', 'HttpClient', 'HttpClient' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[PaisService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
+    at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
+    at Object.PaisService_Factory [as factory] (ng:///PaisService/ɵfac.js:4:39)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11457:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11276:1)
+    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21832:1)
+    at Object.get (node_modules/@angular/core/fesm2015/core.mjs:21509:1)
+
+Error: Expected undefined to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (src/app/pais/pais-list/pais-list.component.spec.ts:26:23)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+    </testCase>
+  </file>
+  <file path="src/app/artista/artista-list/artista-list.component.spec.ts">
+    <testCase name="ArtistaListComponent should have an img element " duration="81"/>
+    <testCase name="ArtistaListComponent should create" duration="14"/>
+  </file>
+  <file path="src/app/museo/museo-list/museo-list.component.spec.ts">
+    <testCase name="MuseoListComponent should create" duration="26">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[MuseoService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'MuseoService', 'HttpClient', 'HttpClient' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[MuseoService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
+    at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
+    at Object.MuseoService_Factory [as factory] (ng:///MuseoService/ɵfac.js:4:40)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11457:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11276:1)
+    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21832:1)
+    at Object.get (node_modules/@angular/core/fesm2015/core.mjs:21509:1)
+
+Error: Expected undefined to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (src/app/museo/museo-list/museo-list.component.spec.ts:26:23)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+    </testCase>
+  </file>
+  <file path="src/app/ciudad/ciudad-list/ciudad-list.component.spec.ts">
+    <testCase name="CiudadListComponent should create" duration="43">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[CiudadService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'CiudadService', 'HttpClient', 'HttpClient' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[CiudadService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
+    at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
+    at Object.CiudadService_Factory [as factory] (ng:///CiudadService/ɵfac.js:4:41)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11457:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11276:1)
+    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21832:1)
+    at Object.get (node_modules/@angular/core/fesm2015/core.mjs:21509:1)
+
+Error: Expected undefined to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (src/app/ciudad/ciudad-list/ciudad-list.component.spec.ts:26:23)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+    </testCase>
+  </file>
+  <file path="src/app/obra/obra.service.spec.ts">
+    <testCase name="Service: Obra should ..." duration="4"/>
+  </file>
+  <file path="src/app/artista/artista-detail/artista-detail.component.spec.ts">
+    <testCase name="ArtistaDetailComponent should have an img element" duration="43"/>
+    <testCase name="ArtistaDetailComponent should create" duration="29"/>
+  </file>
+  <file path="src/app/obra/obra-list/obra-list.component.spec.ts">
+    <testCase name="ObraListComponent should create" duration="8"/>
+  </file>
+  <file path="src/app/museo/museo-detail/museo-detail.component.spec.ts">
+    <testCase name="MuseoDetailComponent should create" duration="35"/>
+  </file>
+  <file path="src/app/artista/artista.service.spec.ts">
+    <testCase name="Service: Artista should ..." duration="2"/>
+  </file>
+  <file path="src/app/pais/pais.service.spec.ts">
+    <testCase name="Service: Pais should ..." duration="3">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[PaisService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'PaisService', 'HttpClient', 'HttpClient' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[PaisService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
+    at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
+    at Object.PaisService_Factory [as factory] (ng:///PaisService/ɵfac.js:4:39)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11457:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11276:1)
+    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21832:1)
+    at TestBedRender3.inject (node_modules/@angular/core/fesm2015/testing.mjs:1719:1)
+</failure>
+    </testCase>
+  </file>
+  <file path="src/app/museo/museo.service.spec.ts">
+    <testCase name="Service: Museo should ..." duration="5">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[MuseoService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'MuseoService', 'HttpClient', 'HttpClient' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[MuseoService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
+    at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
+    at Object.MuseoService_Factory [as factory] (ng:///MuseoService/ɵfac.js:4:40)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11457:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11276:1)
+    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21832:1)
+    at TestBedRender3.inject (node_modules/@angular/core/fesm2015/testing.mjs:1719:1)
+</failure>
+    </testCase>
+  </file>
   <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should have as title 'museums-front'" duration="118"/>
-    <testCase name="AppComponent should create the app" duration="14"/>
-    <testCase name="AppComponent should render title" duration="13"/>
+    <testCase name="AppComponent should create the app" duration="52"/>
+    <testCase name="AppComponent should have as title 'museums-front'" duration="37"/>
+  </file>
+  <file path="src/app/ciudad/ciudad.service.spec.ts">
+    <testCase name="Service: Ciudad should ..." duration="2"/>
+  </file>
+  <file path="src/app/movimientoartistico/movimientoartistico-detalle/movimientoartistico-detalle.component.spec.ts">
+    <testCase name="MovimientoartisticoDetalleComponent should create" duration="73">
+      <failure message="Error">TypeError: Cannot read properties of undefined (reading 'nombre')
+    at MovimientoartisticoDetalleComponent_Template (ng:///MovimientoartisticoDetalleComponent.js:51:54)
+    at executeTemplate (node_modules/@angular/core/fesm2015/core.mjs:9618:1)
+    at refreshView (node_modules/@angular/core/fesm2015/core.mjs:9484:1)
+    at refreshComponent (node_modules/@angular/core/fesm2015/core.mjs:10655:1)
+    at refreshChildComponents (node_modules/@angular/core/fesm2015/core.mjs:9280:1)
+    at refreshView (node_modules/@angular/core/fesm2015/core.mjs:9534:1)
+    at renderComponentOrTemplate (node_modules/@angular/core/fesm2015/core.mjs:9598:1)
+    at tickRootContext (node_modules/@angular/core/fesm2015/core.mjs:10829:1)
+    at detectChangesInRootView (node_modules/@angular/core/fesm2015/core.mjs:10854:1)
+    at RootViewRef.detectChanges (node_modules/@angular/core/fesm2015/core.mjs:21451:1)
+</failure>
+    </testCase>
   </file>
 </testExecutions>
