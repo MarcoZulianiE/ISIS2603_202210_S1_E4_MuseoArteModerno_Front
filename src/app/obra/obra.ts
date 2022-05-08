@@ -1,6 +1,7 @@
-//import { Museo } from "./museo/museo";
-//import { Artista } from "./artista/artista";
-//import { MovimientoArtistico } from "./movimientoartistico/movimientoartistico";
+import { Museo } from "../museo/museo";
+import { Artista } from "../artista/artista";
+import { Movimientoartistico } from "../movimientoartistico/movimientoartistico";
+
 
 
 export class Obra {
@@ -9,23 +10,26 @@ export class Obra {
   tipo: String;
   descripcion: String;
   fechaPublicacion: Date;
+  imagen : String;
 
-  //  Museo: museo;
-  //  Artista: artista;
-  //  MovimientoArtistico: movimiento;
+  museo: Museo;
+  artista: Artista;
+  movimientoArtistico: Movimientoartistico;
 
 
 
-  constructor(id: number, nombre: String, tipo: String, descripcion: String, fechaPublicacion: Date,
+  constructor(id: number, nombre: String, tipo: String, descripcion: String,
+    fechaPublicacion: Date, imagen: String,  museo: Museo, artista: Artista, movimiento: Movimientoartistico
   ) {
     this.id = id;
     this.nombre = nombre,
     this.tipo = tipo;
     this.descripcion = descripcion;
     this.fechaPublicacion = fechaPublicacion;
-    //  this.museo = museo;
-    //  this.artista = artista;
-    //  this.movimiento = moviemiento;
+    this.imagen = imagen;
+    this.museo = museo;
+    this.artista = artista;
+    this.movimientoArtistico = movimiento;
 
 
   }
