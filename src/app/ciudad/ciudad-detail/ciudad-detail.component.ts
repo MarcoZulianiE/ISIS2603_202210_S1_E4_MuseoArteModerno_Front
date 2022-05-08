@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Ciudad } from '../ciudad';
 import { CiudadDetail } from '../ciudad-detail';
 
 @Component({
@@ -9,7 +8,8 @@ import { CiudadDetail } from '../ciudad-detail';
 })
 export class CiudadDetailComponent implements OnInit {
 
-  @Input() ciudadDetail!: CiudadDetail;
+  @Input()
+  ciudadDetail!: CiudadDetail;
 
   constructor() { }
 

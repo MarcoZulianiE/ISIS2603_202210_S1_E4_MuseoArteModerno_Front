@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Ciudad } from '../ciudad';
 import { CiudadService } from '../ciudad.service';
-import {CiudadDetail} from "../ciudad-detail";
+import { CiudadDetail } from '../ciudad-detail';
 import { CiudadDetailComponent } from '../ciudad-detail/ciudad-detail.component';
 
 @Component({
@@ -14,15 +14,15 @@ export class CiudadListComponent implements OnInit {
   constructor(private ciudadService: CiudadService) { }
   ciudades: Array<Ciudad> = [];
   selected: Boolean = false;
-  selectedCiudad!: CiudadDetailComponent;
+  selectedCiudad!: CiudadDetail;
 
   ngOnInit() {
     this.getCiudades
   }
-  onSelected(ciudad: CiudadDetail):void{
+  onSelected(pCiudad: CiudadDetail):void{
     this.selected = true;
-    //this.selectedCiudad = ciudad;
-    console.log(ciudad);
+    this.selectedCiudad = pCiudad;
+    console.log(pCiudad);
   }
   getCiudades() {
     this.ciudadService.getCiudades().subscribe(ciudades => {
