@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <p class="h3 p-3">{{ paisDetail.nombrePais}}</p>
+  <div class="row">
+    <div class="col-2">
+      <div class="thumb">
+        <img
+          class="img-fluid"
+          src="{{ paisDetail.imagen }}"
+          alt="{{ paisDetail.nombrePais }}"
+        />
+      </div>
+    </div>
+    <div class="col">
+      <dl>
+        <dt>ArtistasNacimiento</dt>
+        <dd class = "caption" *ngFor="let artista1 of paisDetail.artistasNacimiento">
+          {{artista1.nombre }}</dd>
+        <hr />
+        <dt>ArtistasFallecimiento</dt>
+        <dd class = "caption" *ngFor="let artista2 of paisDetail.artistasFallecimiento">
+          {{artista2.nombre }}</dd>
+        <hr />
+
+        <dt>Movimientos</dt>
+        <dd class = "caption" *ngFor="let movimiento of paisDetail.movimientos">
+          {{movimiento.nombre }}</dd>
+        <hr />
+        <dt>Ciudades</dt>
+        <dd class = "caption" *ngFor="let ciudad of paisDetail.ciudades">
+          {{ciudad.nombre }}</dd>
+        <hr />
+        <dt>Museos</dt>
+        <dd class = "caption" *ngFor="let museo of paisDetail.museos">
+          {{museo.nombre }}</dd>
+        <hr />
+      </dl>
+    </div>
+  </div>
+ </div>

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
-import { Pais } from './pais';
+import { PaisDetail } from './pais-detail';
 import {Observable} from 'rxjs';
 
 @Injectable({
@@ -13,9 +13,9 @@ export class PaisService {
 
   constructor(private http: HttpClient) { }
 
-  getPaises(): Observable<Pais[]> {
-    console.log(this.http.get<Pais[]>(this.apiUrl));
-    return this.http.get<Pais[]>(this.apiUrl);
+  getPaises(): Observable<PaisDetail[]> {
+    console.log(this.http.get<PaisDetail[]>(this.apiUrl));
+    return this.http.get<PaisDetail[]>(this.apiUrl);
   }
 
 }
