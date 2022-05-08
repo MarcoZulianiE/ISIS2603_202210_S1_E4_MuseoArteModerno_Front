@@ -1,14 +1,18 @@
+import {Pais} from "../pais/pais";
+
 export class Ciudad {
   nombre:string;
   id:number;
-  lat:number;
-  lon:number;
+  coordenadasCiudad:string;
+  imagen:string;
+  pais:Pais;
 
-	constructor(nombre:string , id:number,lat:number,lon:number) {
+	constructor(imagen:string,nombre:string , id:number,coordenadasCiudad:string,pais:Pais) {
     this.nombre=nombre;
     this.id=id;
-    this.lat=lat;
-    this.lon=lon;
+    this.coordenadasCiudad=coordenadasCiudad;
+    this.imagen=imagen;
+    this.pais=pais;
 	}
 
 }
