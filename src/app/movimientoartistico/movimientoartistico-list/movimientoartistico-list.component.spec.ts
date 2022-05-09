@@ -36,7 +36,7 @@ describe('MovimientoartisticoDetalleComponent', () => {
       faker.image.imageUrl()
      );
 
-  component.artistas = [new MovimientoartisticoDetail(faker.datatype.number(), faker.lorem.sentence(), faker.image.imageUrl(), faker.lorem.sentence(), faker.date.pas(), [], [], [], pais)];
+  component.movimientos = [new MovimientoartisticoDetail(faker.datatype.number(), faker.lorem.sentence(), faker.image.imageUrl(), faker.lorem.sentence(), faker.date.pas(), [], [], [], pais)];
   fixture.detectChanges();
   debug = fixture.debugElement;
 
