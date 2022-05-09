@@ -11,12 +11,12 @@ import { CiudadModule } from './ciudad/ciudad.module';
 import {PaisModule} from './pais/pais.module';
 import { MuseoModule } from './museo/museo.module';
 import { ObraModule } from './obra/obra.module';
-import { MapComponent } from './@core/components/map/map.component';
+//import { MapComponent } from './@core/components/map/map.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MapComponent
+    //MapComponent
   ],
   imports: [
     BrowserModule,
