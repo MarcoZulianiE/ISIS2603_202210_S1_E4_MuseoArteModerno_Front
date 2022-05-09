@@ -6,45 +6,59 @@ import { faker } from '@faker-js/faker';
 
 import { MovimientoartisticoListComponent } from './movimientoartistico-list.component';
 import { HttpClientModule } from '@angular/common/http';
-import {MovimientoartisticoDetail} from "../movimientoartistico-detail";
 import { Pais } from 'src/app/pais/pais';
-import {MovimientoartisticoService} from '../movimientoartistico.service'
+import { MovimientoartisticoService } from '../movimientoartistico.service';
+import { MovimientoartisticoDetail } from '../movimientoartistico-detail';
 
-describe('MovimientoartisticoDetalleComponent', () => {
-  let component: MovimientoartisticoListComponent;
-  let fixture: ComponentFixture<MovimientoartisticoListComponent>;
-  let debug = DebugElement;
+describe('MovimientoartisticoListComponent', () => {
+ let component: MovimientoartisticoListComponent;
+ let fixture: ComponentFixture<MovimientoartisticoListComponent>;
+ let debug: DebugElement;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      imports: [HttpClientModule],
-      declarations: [ MovimientoartisticoListComponent ],
-      providers: [MovimientoartisticoService]
-    })
-    .compileComponents();
-  }));
+ beforeEach(async(() => {
+   TestBed.configureTestingModule({
+     imports: [HttpClientModule],
+     declarations: [ MovimientoartisticoListComponent ],
+     providers: [ MovimientoartisticoService ]
+   })
+   .compileComponents();
+ }));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(MovimientoartisticoListComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+ beforeEach(() => {
+   fixture = TestBed.createComponent(MovimientoartisticoListComponent);
+   component = fixture.componentInstance;
 
-    let pais = new Pais(
-      faker.datatype.number(),
-      faker.lorem.sentence(),
-      faker.lorem.sentence(),
-      faker.image.imageUrl()
-     );
+   let pais = new Pais(
+    faker.datatype.number(),
+    faker.lorem.sentence(),
+    faker.lorem.sentence(),
+    faker.image.imageUrl()
+  );
+   component.movimientos = [
+     new MovimientoartisticoDetail(
+       faker.datatype.number(),
+       faker.lorem.sentence(),
+       faker.image.imageUrl(),
+       faker.lorem.sentence(),
+       faker.date.past(),
+       [],
+       [],
+       [],
+       pais
+     ),
+   ];
+   fixture.detectChanges();
+   debug = fixture.debugElement;
+ });
 
-  component.movimientos = [new MovimientoartisticoDetail(faker.datatype.number(), faker.lorem.sentence(), faker.image.imageUrl(), faker.lorem.sentence(), faker.date.pas(), [], [], [], pais)];
-  fixture.detectChanges();
-  debug = fixture.debugElement;
+ it('should create', () => {
+   expect(component).toBeTruthy();
+ });
 
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-
+ it('should have an img element ', () => {
+   expect(debug.query(By.css('img')).attributes['alt']).toEqual(
+     component.movimientos[0].nombre
+   );
+ });
 
 });

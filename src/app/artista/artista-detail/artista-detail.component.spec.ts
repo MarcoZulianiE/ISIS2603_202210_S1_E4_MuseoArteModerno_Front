@@ -27,7 +27,8 @@ describe('ArtistaDetailComponent', () => {
    let pais = new Pais(
     faker.datatype.number(),
     faker.lorem.sentence(),
-    faker.lorem.sentence()
+    faker.lorem.sentence(),
+    faker.image.imageUrl()
    );
 
    component.artistaDetail= new ArtistaDetail(
