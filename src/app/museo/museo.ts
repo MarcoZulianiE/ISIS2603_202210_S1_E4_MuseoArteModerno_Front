@@ -9,15 +9,8 @@ export class Museo {
   totalObrasExhibidas: number;
   ubicacion: Pais;
 
-  constructor(
-    id: number,
-    nombre: string,
-    img: string,
-    direccion: string,
-    salasExposicion: Array<String>,
-    totalObrasExhibidas: number,
-    ubicacion: Pais
-    )
+  constructor(id: number, nombre: string, img: string, direccion: string, salasExposicion: Array<String>,
+    totalObrasExhibidas: number, ubicacion: Pais)
     {
       this.id = id;
       this.nombre = nombre;
