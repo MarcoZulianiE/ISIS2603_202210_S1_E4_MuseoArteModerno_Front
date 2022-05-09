@@ -23,7 +23,7 @@
           <div class="col mb-2" *ngFor="let obra of artistaDetail.obras">
             <div class="card p-2" style="width: 15rem; height: 24rem">
               <img class="card-img-top obra"
-                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/The_Scream_by_Edvard_Munch%2C_1893_-_Nasjonalgalleriet.png"
+                src="{{ obra.imagen }}"
                 alt="{{ obra.nombre }}" />
               <div class="card-body">
                 <h5 class="card-title">{{ obra.nombre }}</h5>
