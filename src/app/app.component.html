@@ -4,43 +4,34 @@
   <div id="menu" class="container-fluid">
     <hr />
     <div class="row">
-      <div class="col-2" (click)="onSelected('museos')" >
+      <div class="col-2" (click)="onSelected('museos')">
         <h3>Museos</h3>
       </div>
       <div class="col-2" (click)="onSelected('artistas')">
-        <h3>Artistas</h3>
+        <h3 class="menu-item"><a routerLink="/artistas/list">Artistas</a></h3>
       </div>
       <div class="col-2" (click)="onSelected('obras')">
         <h3>Obras</h3>
       </div>
       <div class="col-2" (click)="onSelected('mov artisticos')">
-        <h3>Mov. Artisticos</h3>
+        <h3 class="menu-item"><a routerLink="/movimientoartistico/list">Mov. Artisticos</a></h3>
       </div>
       <div class="col-2" (click)="onSelected('paises')">
         <h3>Paises</h3>
       </div>
-      <div class="col-2"(click)="onSelected('ciudades')">
+      <div class="col-2" (click)="onSelected('ciudades')">
         <h3>Ciudades</h3>
       </div>
     </div>
     <hr />
   </div>
-  <div *ngIf="categoria_mostrada == 'museos'">
-    <app-museo-list></app-museo-list>
-  </div>
-  <div *ngIf="categoria_mostrada == 'artistas'">
-    <app-artista-list></app-artista-list>
-  </div>
-  <div *ngIf="categoria_mostrada == 'obras'">
-    <app-obra-list></app-obra-list>
-  </div>
-  <div *ngIf="categoria_mostrada == 'mov artisticos'">
-    <app-movimientoartistico-list></app-movimientoartistico-list>
-  </div>
-  <div *ngIf="categoria_mostrada == 'paises'">
-    <app-pais-list></app-pais-list>
-  </div>
-  <div *ngIf="categoria_mostrada == 'ciudades'">
-    <app-ciudad-list></app-ciudad-list>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

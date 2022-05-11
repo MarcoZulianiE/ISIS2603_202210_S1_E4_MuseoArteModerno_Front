@@ -9,3 +9,8 @@ img.logo {
 h3 {
   text-align: center;
 }
+
+h3.menu-item {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
