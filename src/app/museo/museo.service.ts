@@ -10,7 +10,7 @@ import { MuseoDetail } from './museo-detail';
 })
 export class MuseoService {
 
-  private apiUrl = environment.baseUrl + 'museo';
+  private apiUrl = environment.baseUrl + 'Museos';
 
   constructor(private http: HttpClient) { }
 

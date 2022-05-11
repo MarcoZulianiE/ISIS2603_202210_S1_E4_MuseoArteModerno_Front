@@ -14,7 +14,6 @@ export class PaisService {
   constructor(private http: HttpClient) { }
 
   getPaises(): Observable<PaisDetail[]> {
-    console.log(this.http.get<PaisDetail[]>(this.apiUrl));
     return this.http.get<PaisDetail[]>(this.apiUrl);
   }
 

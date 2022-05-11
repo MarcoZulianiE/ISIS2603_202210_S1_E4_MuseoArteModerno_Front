@@ -20,7 +20,6 @@ export class ArtistaListComponent implements OnInit {
   getArtistas(): void {
     this.artistaService.getArtistas().subscribe((artistas) => {
       this.artistas = artistas;
-      console.log(this.artistas)
     });
   }
 

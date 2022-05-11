@@ -28,6 +28,7 @@ export class MuseoListComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.getMuseos();
   }
 
 }

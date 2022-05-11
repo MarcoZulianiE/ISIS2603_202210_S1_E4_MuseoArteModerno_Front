@@ -1,25 +1,23 @@
-<div *ngIf="selected">
-  <app-pais-detail [paisDetail]="selectedPais"></app-pais-detail>
-</div>
-<div class ="container-fluid">
-    <div class = "row">
-        <div class = "col mb-2" *ngFor = "let pais of paises">
-          <div class="card p-2" style="width: 15rem; height: 24rem">
-            <div class="card p-2" style="width: 15rem; height: 33rem">
-              <img
-              class="card-img-top"
-              src="{{ pais.imagen }}"
-              alt="{{ pais.nombrePais }}"
-              (click)= "onSelected(pais)"
-            />
+<div class="recurso">
+  <h3>PAISES</h3>
+  <div *ngIf="selected">
+    <app-pais-detail [paisDetail]="selectedPais"></app-pais-detail>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col mb-2" *ngFor="let pais of paises">
+        <div class="card p-2" style="width: 15rem; height: 24rem">
+          <div class="card p-2" style="width: 15rem; height: 33rem">
+            <img class="card-img-top" src="{{ pais.imagen }}" alt="{{ pais.nombrePais }}" (click)="onSelected(pais)" />
 
             <div class="card-body">
               <h5 class="card-title">{{ pais.nombrePais }}</h5>
-                <p class="card-text">Coordenadas: {{ pais.coordenadas}}</p>
+              <p class="card-text">Coordenadas: {{ pais.coordenadas}}</p>
+            </div>
+
+
           </div>
-
-
+        </div>
+      </div>
+      <hr class="division" />
     </div>
-  </div>
-</div>
-

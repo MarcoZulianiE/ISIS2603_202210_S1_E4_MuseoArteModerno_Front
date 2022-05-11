@@ -1,26 +1,21 @@
-<h3>OBRAS</h3>>
-<div *ngIf="selected">
-  <app-obra-detail [obraDetail]="selectedObra"></app-obra-detail>
-</div>
-
-<hr />
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="col mb-2" *ngFor="let o of obras">
-          <div class="card p-2" style="width: 15rem; height: 25rem">
-              <img
-                class="card-img-top"
-                src="{{ o.imagen }}"
-                alt="{{ o.nombre }}"
-                (click)= "onSelected(o)"
-              />
-              <div class="card-body">
-                <h5 class="card-title">{{ o.nombre }}</h5>
-                  <p class="card-text">Fecha de publicacion: {{ o.fechaPublicacion }}</p>
-                  <p></p>
-              </div>
-           </div>
+<div class="recurso">
+  <h3>OBRAS</h3>
+  <div *ngIf="selected">
+    <app-obra-detail [obraDetail]="selectedObra"></app-obra-detail>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col mb-2" *ngFor="let o of obras">
+        <div class="card p-2" style="width: 15rem; height: 25rem">
+          <img class="card-img-top" src="{{ o.imagen }}" alt="{{ o.nombre }}" (click)="onSelected(o)" />
+          <div class="card-body">
+            <h5 class="card-title">{{ o.nombre }}</h5>
+            <p class="card-text">Fecha de publicacion: {{ o.fechaPublicacion }}</p>
+            <p></p>
+          </div>
+        </div>
       </div>
-   </div>
+    </div>
+  </div>
+  <hr class="division" />
 </div>

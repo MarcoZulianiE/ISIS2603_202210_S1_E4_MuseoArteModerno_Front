@@ -22,7 +22,6 @@ export class PaisListComponent implements OnInit {
   getPaises(): void {
     this.paisService.getPaises().subscribe((paises) => {
       this.paises = paises;
-      console.log(this.paises)
     });
   }
 
@@ -33,7 +32,6 @@ export class PaisListComponent implements OnInit {
   onSelected(pPais: PaisDetail):void{
     this.selected = true;
     this.selectedPais = pPais;
-    console.log(pPais);
   }
 
 }

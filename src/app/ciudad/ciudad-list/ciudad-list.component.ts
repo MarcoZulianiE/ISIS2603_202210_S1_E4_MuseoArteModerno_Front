@@ -17,12 +17,12 @@ export class CiudadListComponent implements OnInit {
   selectedCiudad!: CiudadDetail;
 
   ngOnInit() {
-    this.getCiudades
+    this.getCiudades()
   }
+
   onSelected(pCiudad: CiudadDetail):void{
     this.selected = true;
     this.selectedCiudad = pCiudad;
-    console.log(pCiudad);
   }
   getCiudades() {
     this.ciudadService.getCiudades().subscribe(ciudades => {

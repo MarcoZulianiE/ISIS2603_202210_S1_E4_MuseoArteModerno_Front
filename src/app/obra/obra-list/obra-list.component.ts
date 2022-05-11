@@ -25,7 +25,6 @@ export class ObraListComponent implements OnInit {
   getObras(){
       this.obraService.getObras().subscribe(obras => {
         this.obras = obras;
-        console.log(this.obras)
       })
 
   }

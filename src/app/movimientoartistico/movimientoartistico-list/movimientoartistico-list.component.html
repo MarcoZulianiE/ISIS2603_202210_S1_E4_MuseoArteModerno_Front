@@ -1,24 +1,23 @@
-<h3>MOVIMIENTOS ARTISTICOS</h3>
-<div *ngIf = "selected">
-  <app-movimientoartistico-detalle [movimientoDetail]="selectedMovimiento"></app-movimientoartistico-detalle>
-</div>
+<div class="recurso">
+  <h3>MOVIMIENTOS ARTISTICOS</h3>
+  <div *ngIf="selected">
+    <app-movimientoartistico-detalle [movimientoDetail]="selectedMovimiento"></app-movimientoartistico-detalle>
+  </div>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col mb-2" *ngFor="let movimiento of movimientos">
-          <div class="card p-2" style="width: 15rem; height: 25rem">
-              <img
-                class="card-img-top"
-                src="{{ movimiento.imagen }}"
-                alt="{{ movimiento.nombre }}"
-                (click)= "onSelected(movimiento)"
-              />
-              <div class="card-body">
-                <h5 class="card-title">{{ movimiento.nombre }}</h5>
-                  <p class="card-text">Fecha de Apogeo: {{ movimiento.fechaApogeo }}</p>
-                  <p></p>
-              </div>
-           </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col mb-2" *ngFor="let movimiento of movimientos">
+        <div class="card p-2" style="width: 15rem; height: 25rem">
+          <img class="card-img-top" src="{{ movimiento.imagen }}" alt="{{ movimiento.nombre }}"
+            (click)="onSelected(movimiento)" />
+          <div class="card-body">
+            <h5 class="card-title">{{ movimiento.nombre }}</h5>
+            <p class="card-text">Fecha de Apogeo: {{ movimiento.fechaApogeo }}</p>
+            <p></p>
+          </div>
+        </div>
       </div>
-   </div>
+    </div>
+  </div>
+  <hr class="division" />
 </div>
