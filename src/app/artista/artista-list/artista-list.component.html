@@ -1,25 +1,21 @@
 <div class="recurso">
   <h3>ARTISTAS</h3>
-
-  <div *ngIf="selected">
-    <app-artista-detail [artistaDetail]="selectedArtista"></app-artista-detail>
-  </div>
-
-  <div class="container-fluid">
+  <router-outlet name="detail"></router-outlet>
+  <div class="container-fluid col-12">
     <div class="row">
       <div class="col mb-2" *ngFor="let artista of artistas">
         <div class="card p-2" style="width: 15rem; height: 24rem">
-          <img class="card-img-top" src="{{ artista.imagen }}" alt="{{ artista.nombre }}"
-            (click)="onSelected(artista)" />
-          <div class="card-body">
+          <a class="text-decoration-none" routerLink="/artistas/{{ artista.id }}">
+            <img class="card-img-top" src="{{ artista.imagen }}" alt="{{ artista.nombre }}" />
             <h5 class="card-title">{{ artista.nombre }}</h5>
-            <p class="card-text"> {{ artista.fechaNacimiento }}</p>
-            <p class="card-text"> {{ artista.fechaFallecimiento }}</p>
-          </div>
+          </a>
+            <div class="card-body">
+              <p class="card-text"> {{ artista.fechaNacimiento }}</p>
+              <p class="card-text"> {{ artista.fechaFallecimiento }}</p>
+            </div>
         </div>
       </div>
     </div>
   </div>
-
   <hr class="division" />
 </div>

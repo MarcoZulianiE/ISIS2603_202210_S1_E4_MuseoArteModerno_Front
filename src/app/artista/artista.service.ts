@@ -17,4 +17,8 @@ export class ArtistaService {
   getArtistas(): Observable<ArtistaDetail[]> {
     return this.http.get<ArtistaDetail[]>(this.apiUrl);
   }
+
+  getArtista(id : string): Observable<ArtistaDetail> {
+    return this.http.get<ArtistaDetail>(this.apiUrl + "/" + id);
+  }
 }
