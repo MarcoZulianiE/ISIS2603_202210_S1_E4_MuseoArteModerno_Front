@@ -1,46 +1,96 @@
 <testExecutions version="1">
+  <file path="src/app/obra/obra.service.spec.ts">
+    <testCase name="Service: Obra should ..." duration="21"/>
+  </file>
   <file path="src/app/ciudad/ciudad-detail/ciudad-detail.component.spec.ts">
-    <testCase name="CiudadDetailComponent should have an img element" duration="115"/>
-  </file>
-  <file path="src/app/artista/artista-list/artista-list.component.spec.ts">
-    <testCase name="ArtistaListComponent should have an img element " duration="57"/>
-    <testCase name="ArtistaListComponent should create" duration="25"/>
-  </file>
-  <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should create the app" duration="82"/>
-    <testCase name="AppComponent should have as title 'museums-front'" duration="8"/>
-  </file>
-  <file path="src/app/artista/artista.service.spec.ts">
-    <testCase name="Service: Artista should ..." duration="3"/>
-  </file>
-  <file path="src/app/museo/museo.service.spec.ts">
-    <testCase name="Service: Museo should ..." duration="3"/>
-  </file>
-  <file path="src/app/artista/artista-detail/artista-detail.component.spec.ts">
-    <testCase name="ArtistaDetailComponent should create" duration="26"/>
-    <testCase name="ArtistaDetailComponent should have an img element" duration="8"/>
+    <testCase name="CiudadDetailComponent should have an img element" duration="82"/>
   </file>
   <file path="src/app/obra/obra-list/obra-list.component.spec.ts">
-    <testCase name="obraListComponent should create" duration="21"/>
+    <testCase name="obraListComponent should create" duration="58"/>
   </file>
-  <file path="src/app/obra/obra.service.spec.ts">
-    <testCase name="Service: Obra should ..." duration="11"/>
-  </file>
-  <file path="src/app/pais/pais.service.spec.ts">
-    <testCase name="Service: Pais should ..." duration="3"/>
+  <file path="src/app/museo/museo.service.spec.ts">
+    <testCase name="Service: Museo should ..." duration="4"/>
   </file>
   <file path="src/app/movimientoartistico/movimientoartistico-detalle/movimientoartistico-detalle.component.spec.ts">
-    <testCase name="MovimientoartisticoDetailComponent should have an img element" duration="20"/>
-    <testCase name="MovimientoartisticoDetailComponent should create" duration="8"/>
+    <testCase name="MovimientoartisticoDetailComponent should create" duration="37"/>
+    <testCase name="MovimientoartisticoDetailComponent should have an img element" duration="10"/>
   </file>
-  <file path="src/app/movimientoartistico/movimientoartistico-list/movimientoartistico-list.component.spec.ts">
-    <testCase name="MovimientoartisticoListComponent should have an img element " duration="15"/>
-    <testCase name="MovimientoartisticoListComponent should create" duration="11"/>
+  <file path="src/app/movimientoartistico/movimientoartistico.service.spec.ts">
+    <testCase name="Service: Movimientoartistico should ..." duration="3"/>
   </file>
   <file path="src/app/ciudad/ciudad.service.spec.ts">
     <testCase name="Service: Ciudad should ..." duration="3"/>
   </file>
-  <file path="src/app/movimientoartistico/movimientoartistico.service.spec.ts">
-    <testCase name="Service: Movimientoartistico should ..." duration="2"/>
+  <file path="src/app/movimientoartistico/movimientoartistico-list/movimientoartistico-list.component.spec.ts">
+    <testCase name="MovimientoartisticoListComponent should create" duration="51"/>
+    <testCase name="MovimientoartisticoListComponent should have an img element " duration="50"/>
+  </file>
+  <file path="src/app/pais/pais.service.spec.ts">
+    <testCase name="Service: Pais should ..." duration="3"/>
+  </file>
+  <file path="src/app/artista/artista-detail/artista-detail.component.spec.ts">
+    <testCase name="ArtistaDetailComponent should have an img element" duration="136">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[ActivatedRoute -&gt; ActivatedRoute]: 
+  NullInjectorError: No provider for ActivatedRoute!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ActivatedRoute', 'ActivatedRoute' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[ActivatedRoute -&gt; ActivatedRoute]: 
+  NullInjectorError: No provider for ActivatedRoute!
+    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21832:1)
+    at Object.get (node_modules/@angular/core/fesm2015/core.mjs:21509:1)
+    at lookupTokenUsingModuleInjector (node_modules/@angular/core/fesm2015/core.mjs:3358:1)
+    at getOrCreateInjectable (node_modules/@angular/core/fesm2015/core.mjs:3470:1)
+    at ɵɵdirectiveInject (node_modules/@angular/core/fesm2015/core.mjs:14396:1)
+    at NodeInjectorFactory.ArtistaDetailComponent_Factory [as factory] (ng:///ArtistaDetailComponent/ɵfac.js:4:50)
+    at getNodeInjectable (node_modules/@angular/core/fesm2015/core.mjs:3565:1)
+
+TypeError: Cannot read properties of undefined (reading 'query')
+    at UserContext.&lt;anonymous&gt; (src/app/artista/artista-detail/artista-detail.component.spec.ts:54:16)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:1)
+    at Zone.run (node_modules/zone.js/fesm2015/zone.js:134:1)
+    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:567:1)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/fesm2015/zone-testing.js:582:1)
+    at &lt;Jasmine&gt;
+</failure>
+    </testCase>
+    <testCase name="ArtistaDetailComponent should create" duration="7">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[ActivatedRoute -&gt; ActivatedRoute]: 
+  NullInjectorError: No provider for ActivatedRoute!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ActivatedRoute', 'ActivatedRoute' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[ActivatedRoute -&gt; ActivatedRoute]: 
+  NullInjectorError: No provider for ActivatedRoute!
+    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21832:1)
+    at Object.get (node_modules/@angular/core/fesm2015/core.mjs:21509:1)
+    at lookupTokenUsingModuleInjector (node_modules/@angular/core/fesm2015/core.mjs:3358:1)
+    at getOrCreateInjectable (node_modules/@angular/core/fesm2015/core.mjs:3470:1)
+    at ɵɵdirectiveInject (node_modules/@angular/core/fesm2015/core.mjs:14396:1)
+    at NodeInjectorFactory.ArtistaDetailComponent_Factory [as factory] (ng:///ArtistaDetailComponent/ɵfac.js:4:50)
+    at getNodeInjectable (node_modules/@angular/core/fesm2015/core.mjs:3565:1)
+
+Error: Expected undefined to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (src/app/artista/artista-detail/artista-detail.component.spec.ts:50:22)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+    </testCase>
+  </file>
+  <file path="src/app/app.component.spec.ts">
+    <testCase name="AppComponent should create the app" duration="45"/>
+    <testCase name="AppComponent should have as title 'museums-front'" duration="6"/>
+  </file>
+  <file path="src/app/artista/artista.service.spec.ts">
+    <testCase name="Service: Artista should ..." duration="4"/>
+  </file>
+  <file path="src/app/artista/artista-list/artista-list.component.spec.ts">
+    <testCase name="ArtistaListComponent should have an img element " duration="63"/>
+    <testCase name="ArtistaListComponent should create" duration="57"/>
   </file>
 </testExecutions>
