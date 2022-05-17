@@ -7,9 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'museums-front';
-  categoria_mostrada = 'museos';
 
   onSelected(elemento: string): void {
-    this.categoria_mostrada = elemento;
   }
 }
