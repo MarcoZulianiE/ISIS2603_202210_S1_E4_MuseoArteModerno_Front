@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Movimientoartistico } from '../movimientoartistico';
+
 import { MovimientoartisticoDetail } from '../movimientoartistico-detail';
 import { MovimientoartisticoService } from '../movimientoartistico.service';
 
@@ -10,7 +10,7 @@ import { MovimientoartisticoService } from '../movimientoartistico.service';
 })
 export class MovimientoartisticoListComponent implements OnInit {
   movimientos: Array<MovimientoartisticoDetail> = [];
-  selected: Boolean = false;
+  selected: boolean = false;
   selectedMovimiento!: MovimientoartisticoDetail;
 
   constructor(private movimientoService: MovimientoartisticoService) { }
