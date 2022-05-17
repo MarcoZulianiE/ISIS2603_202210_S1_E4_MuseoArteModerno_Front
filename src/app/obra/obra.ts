@@ -22,7 +22,7 @@ export class Obra {
     fechaPublicacion: Date, imagen: String,  museo: Museo, artista: Artista, movimiento: Movimientoartistico
   ) {
     this.id = id;
-    this.nombre = nombre,
+    this.nombre = nombre;
     this.tipo = tipo;
     this.descripcion = descripcion;
     this.fechaPublicacion = fechaPublicacion;
