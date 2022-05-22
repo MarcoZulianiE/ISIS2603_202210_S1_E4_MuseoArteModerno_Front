@@ -1,21 +1,15 @@
 <div class="recurso">
   <h3>ARTISTAS</h3>
-  <router-outlet name="detail"></router-outlet>
-  <div class="container-fluid col-12">
+  <div class="container vertical-scrollable">
     <div class="row">
-      <div class="col mb-2" *ngFor="let artista of artistas">
-        <div class="card p-2" style="width: 15rem; height: 24rem">
-          <a class="text-decoration-none" [routerLink]="['', { outlets: { detalle: ['artistas',artista.id] } }]">
+      <div class="col mb-3" *ngFor="let artista of artistas">
+        <div class="card p-2" style="width: 12rem; height: 15rem">
+          <a class="text-decoration-none" [routerLink]="['', { outlets: { detalle: ['artistas',artista.id] } } ]">
             <img class="card-img-top" src="{{ artista.imagen }}" alt="{{ artista.nombre }}" />
             <h5 class="card-title">{{ artista.nombre }}</h5>
           </a>
-            <div class="card-body">
-              <p class="card-text"> {{ artista.fechaNacimiento }}</p>
-              <p class="card-text"> {{ artista.fechaFallecimiento }}</p>
-            </div>
         </div>
       </div>
     </div>
   </div>
-  <hr class="division" />
 </div>
