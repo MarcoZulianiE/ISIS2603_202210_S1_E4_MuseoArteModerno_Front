@@ -18,18 +18,14 @@ export class ArtistaDetailComponent implements OnInit {
   }
 
   getArtista() {
+    this.artistaId = this.route.snapshot.paramMap.get('id')!
     this.artistaService.getArtista(this.artistaId).subscribe(artista => {
       this.artistaDetail = artista;
     })
   }
 
   ngOnInit() {
-    if (this.artistaDetail === undefined) {
-      this.artistaId = this.route.snapshot.paramMap.get('id')!
-      if (this.artistaId) {
-        this.getArtista();
-      }
-    }
+    this.getArtista();
   }
 
 }

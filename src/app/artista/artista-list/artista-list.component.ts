@@ -10,7 +10,7 @@ import { ArtistaService } from '../artista.service';
 })
 export class ArtistaListComponent implements OnInit {
 
-  selected: Boolean = false;
+  tipoSort: string = 'A..Z';
   selectedArtista!: ArtistaDetail;
 
   artistas: Array<ArtistaDetail> = [];
@@ -20,12 +20,46 @@ export class ArtistaListComponent implements OnInit {
   getArtistas(): void {
     this.artistaService.getArtistas().subscribe((artistas) => {
       this.artistas = artistas;
+      this.ordenar();
     });
   }
 
-  onSelected(artista: ArtistaDetail): void {
-    this.selected = true;
-    this.selectedArtista = artista;
+  getArtistasFiltrados(substr: any): void {
+    this.artistaService.getArtistas().subscribe((artistas) => {
+      this.artistas = artistas.filter((a)=> {
+        return a.nombre.toLowerCase().indexOf(substr.toLowerCase()) != -1
+      })
+      this.ordenar();
+    });
+  }
+
+  onSelected(tipo: string): void {
+    this.tipoSort = tipo;
+    this.ordenar()
+  }
+
+  ordenar () : void {
+    if (this.tipoSort=='A..Z') {
+      this.artistas = this.artistas.sort((a,b)=> {
+        if(a.nombre > b.nombre) return 1;
+        if(a.nombre <= b.nombre) return -1;
+        return 0;
+      });
+    } else if (this.tipoSort=='Z..A') {
+      this.artistas = this.artistas.sort((a,b)=> {
+        if(a.nombre < b.nombre) return 1;
+        if(a.nombre >= b.nombre) return -1;
+        return 0;
+      });
+    }
+  }
+
+  filtrar() {
+    if (document.querySelector('input')?.value == '') {
+      this.getArtistas();
+    } else {
+      this.getArtistasFiltrados(document.querySelector('input')?.value);
+    }
   }
 
   ngOnInit() {

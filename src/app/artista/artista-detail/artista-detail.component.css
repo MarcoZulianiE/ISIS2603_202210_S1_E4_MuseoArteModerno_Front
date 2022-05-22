@@ -37,7 +37,7 @@ h3 {
   overflow-x: hidden;
 }
 .vertical-scrollable-2>.row {
-  height: 10vh;
+  height: 8vh;
   overflow-y: auto;
   overflow-x: hidden;
 }
