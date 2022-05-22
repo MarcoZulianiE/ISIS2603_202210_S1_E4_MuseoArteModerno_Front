@@ -3,10 +3,6 @@ img {
   min-width: 11rem;
 }
 
-div.recurso {
-  border-right: 1px solid black;
-}
-
 a {
   color:black;
   text-decoration: none;
@@ -31,5 +27,6 @@ h3 {
 
 .vertical-scrollable>.row {
   height: 65vh;
-  overflow-y: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
