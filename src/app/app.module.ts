@@ -11,6 +11,8 @@ import { CiudadModule } from './ciudad/ciudad.module';
 import {PaisModule} from './pais/pais.module';
 import { MuseoModule } from './museo/museo.module';
 import { ObraModule } from './obra/obra.module';
+import { MenuSuperiorModule } from './menu-superior/menu-superior.module';
+import { MenuGeneralModule } from './menu-general/menu-general.module';
 //import { MapComponent } from './@core/components/map/map.component';
 
 @NgModule({
@@ -21,6 +23,8 @@ import { ObraModule } from './obra/obra.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MenuGeneralModule,
+    MenuSuperiorModule,
     MovimientoartisticoModule,
     ArtistaModule,
     CiudadModule,

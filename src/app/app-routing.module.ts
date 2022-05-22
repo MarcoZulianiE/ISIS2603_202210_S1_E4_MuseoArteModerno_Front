@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MuseoListComponent } from './museo/museo-list/museo-list.component';
+import { MenuGeneralComponent } from './menu-general/menu-general.component';
 
 const routes: Routes = [
-  { path: '', component: MuseoListComponent }];
+  { path: '', component: MenuGeneralComponent }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
