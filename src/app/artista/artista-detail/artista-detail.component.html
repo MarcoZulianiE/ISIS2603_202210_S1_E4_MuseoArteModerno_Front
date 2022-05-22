@@ -2,9 +2,14 @@
   <br>
   <div class="container-fluid centrado">
     <div class="row">
-      <h3 class="centrado">**{{ artistaDetail.nombre }}**</h3>
-      <div class="thumb">
+      <div class="col">
+        <br>
+        <h3 class="centrado">{{ artistaDetail.nombre }}</h3>
+      </div>
+      <div class="col">
+        <div class="thumb">
         <img class="img-fluid" src="{{ artistaDetail.imagen }}" alt="{{ artistaDetail.nombre }}" />
+      </div>
       </div>
     </div>
     <hr>
@@ -30,6 +35,16 @@
           <div class="card p-2" style="width: 6rem; height: 6rem">
             <img class="obra" src="{{obra.imagen}}" alt="">
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <dt>Movimientos Artisticos</dt>
+    <div class="container vertical-scrollable-2">
+      <div class="row">
+        <div class="col mb-2" *ngFor="let mov of artistaDetail.movimientos">
+          {{mov.nombre}},
         </div>
       </div>
     </div>

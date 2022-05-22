@@ -1,6 +1,6 @@
 img {
-  height: 10rem;
-  width: 10rem;
+  height: 7rem;
+  width: 7rem;
 }
 
 img.obra {
@@ -33,6 +33,11 @@ h3 {
 
 .vertical-scrollable>.row {
   height: 14vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.vertical-scrollable-2>.row {
+  height: 10vh;
   overflow-y: auto;
   overflow-x: hidden;
 }
