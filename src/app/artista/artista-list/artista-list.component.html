@@ -5,7 +5,7 @@
     <div class="row">
       <div class="col mb-2" *ngFor="let artista of artistas">
         <div class="card p-2" style="width: 15rem; height: 24rem">
-          <a class="text-decoration-none" routerLink="/artistas/{{ artista.id }}">
+          <a class="text-decoration-none" [routerLink]="['', { outlets: { detalle: ['artistas',artista.id] } }]">
             <img class="card-img-top" src="{{ artista.imagen }}" alt="{{ artista.nombre }}" />
             <h5 class="card-title">{{ artista.nombre }}</h5>
           </a>

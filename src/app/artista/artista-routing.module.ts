@@ -3,19 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { ArtistaListComponent } from './artista-list/artista-list.component';
 import { ArtistaDetailComponent } from './artista-detail/artista-detail.component';
 
-const routes: Routes = [{
-  path: 'artistas',
-  children: [
-        {
-          path: 'list',
-          component: ArtistaListComponent
-        },
-        {
-          path: ':id',
-          component: ArtistaDetailComponent
-        },
-  ]
-}];
+const routes: Routes = [
+  { path: 'artistas/list', component: ArtistaListComponent },
+  { path: 'artistas/:id', component: ArtistaDetailComponent, outlet: 'detalle' }
+];
 
 
 @NgModule({
