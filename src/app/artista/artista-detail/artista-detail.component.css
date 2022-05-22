@@ -1,11 +1,11 @@
 img {
-  height: 14rem;
-  width: 14rem;
+  height: 10rem;
+  width: 10rem;
 }
 
 img.obra {
-  height: 6rem;
-  width: 6rem;
+  height: 5rem;
+  width: 5rem;
 }
 
 p.text-align-center {
@@ -32,8 +32,8 @@ h3 {
 }
 
 .vertical-scrollable>.row {
-  height: 15vh;
-  overflow-y: scroll;
+  height: 14vh;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 
