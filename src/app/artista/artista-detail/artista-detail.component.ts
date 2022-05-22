@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, Input, OnInit, OnDestroy } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ArtistaDetail } from '../artista-detail';
 import { ArtistaService } from '../artista.service';
 
@@ -8,24 +8,35 @@ import { ArtistaService } from '../artista.service';
   templateUrl: './artista-detail.component.html',
   styleUrls: ['./artista-detail.component.css']
 })
-export class ArtistaDetailComponent implements OnInit {
+export class ArtistaDetailComponent implements OnInit, OnDestroy {
 
+  loader: any;
   artistaId!: string;
-  @Input() artistaDetail!: ArtistaDetail;
+  artistaDetail!: ArtistaDetail;
 
   constructor(private route: ActivatedRoute,
     private artistaService: ArtistaService) {
   }
 
   getArtista() {
-    this.artistaId = this.route.snapshot.paramMap.get('id')!
-    this.artistaService.getArtista(this.artistaId).subscribe(artista => {
-      this.artistaDetail = artista;
-    })
+    var _this = this;
+    this.artistaService.getArtista(this.artistaId)
+            .subscribe(function (o) {
+            _this.artistaDetail = o;
+    });
   }
+
+  onLoad (params : any) {
+    this.artistaId = params['id'];
+    this.getArtista();
+  };
 
   ngOnInit() {
-    this.getArtista();
+    var _this = this;
+    this.loader = this.route.params.subscribe(function (params) { return _this.onLoad(params); });
   }
 
+  ngOnDestroy () {
+    this.loader.unsubscribe();
+  };
 }
