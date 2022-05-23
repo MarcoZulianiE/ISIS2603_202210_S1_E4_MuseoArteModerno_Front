@@ -3,19 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { CiudadListComponent } from './ciudad-list/ciudad-list.component';
 import { CiudadDetailComponent } from './ciudad-detail/ciudad-detail.component';
 
-const routes: Routes = [{
-  path: 'ciudades',
-  children: [
-        {
-          path: 'list',
-          component: CiudadListComponent
-        },
-        {
-          path: ':id',
-          component: CiudadDetailComponent
-        },
-  ]
-}];
+const routes: Routes = [
+  { path: 'ciudades/list', component: CiudadListComponent },
+  { path: 'ciudades/:id', component: CiudadDetailComponent, outlet: 'detalle' }
+];
 
 
 @NgModule({

@@ -3,19 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { MovimientoartisticoListComponent } from './movimientoartistico-list/movimientoartistico-list.component';
 import { MovimientoartisticoDetalleComponent } from './movimientoartistico-detalle/movimientoartistico-detalle.component';
 
-const routes: Routes = [{
-  path: 'movimientoartistico',
-  children: [
-        {
-          path: 'list',
-          component: MovimientoartisticoListComponent
-        },
-        {
-          path: ':id',
-          component: MovimientoartisticoListComponent
-        },
-  ]
-}];
+const routes: Routes = [
+  { path: 'movimientosartisticos/list', component: MovimientoartisticoListComponent },
+  { path: 'movimientosartisticos/:id', component: MovimientoartisticoDetalleComponent, outlet: 'detalle' }
+];
 
 
 @NgModule({

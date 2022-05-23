@@ -3,19 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { PaisListComponent } from './pais-list/pais-list.component';
 import { PaisDetailComponent } from './pais-detail/pais-detail.component';
 
-const routes: Routes = [{
-  path: 'paises',
-  children: [
-        {
-          path: 'list',
-          component: PaisListComponent
-        },
-        {
-          path: ':id',
-          component: PaisDetailComponent
-        },
-  ]
-}];
+const routes: Routes = [
+  { path: 'paises/list', component: PaisListComponent },
+  { path: 'paises/:id', component: PaisDetailComponent, outlet: 'detalle' }
+];
 
 
 @NgModule({
