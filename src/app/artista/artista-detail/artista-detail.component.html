@@ -16,12 +16,16 @@
     <div class="row">
       <div class="col">
         <dt>Nacimiento</dt>
-        <dd>{{artistaDetail.lugarNacimiento.nombrePais}}</dd>
+        <a [routerLink]="['', { outlets: { primary: ['paises','list'], menusup: ['menusup'], detalle: ['paises',artistaDetail.lugarNacimiento.id] } }]">
+          <dd>{{artistaDetail.lugarNacimiento.nombrePais}}</dd>
+        </a>
         <dd>[{{artistaDetail.fechaNacimiento}}]</dd>
       </div>
       <div class="col">
         <dt>Fallecimiento:</dt>
-        <dd>{{ artistaDetail.lugarFallecimiento.nombrePais}}</dd>
+        <a [routerLink]="['', { outlets: { primary: ['paises','list'], menusup: ['menusup'], detalle: ['paises',artistaDetail.lugarFallecimiento.id] } }]">
+          <dd>{{ artistaDetail.lugarFallecimiento.nombrePais}}</dd>
+        </a>
         <dd>[{{artistaDetail.fechaFallecimiento}}]</dd>
       </div>
     </div>
@@ -32,9 +36,11 @@
     <div class="container vertical-scrollable">
       <div class="row text-center">
         <div class="col mb-2" *ngFor="let obra of artistaDetail.obras">
-          <div class="card p-2" style="width: 6rem; height: 6rem">
+          <a [routerLink]="['', { outlets: { primary: ['obras','list'], menusup: ['menusup'], detalle: ['obras',obra.id] } }]">
+            <div class="card p-2" style="width: 6rem; height: 6rem">
             <img class="obra" src="{{obra.imagen}}" alt="">
           </div>
+          </a>
         </div>
       </div>
     </div>
@@ -45,7 +51,9 @@
     <div class="container vertical-scrollable-2">
       <div class="row">
         <div class="col mb-2" *ngFor="let mov of artistaDetail.movimientos">
-          {{mov.nombre}},
+          <a [routerLink]="['', { outlets: { primary: ['movimientosartisticos','list'], menusup: ['menusup'], detalle: ['movimientosartisticos',mov.id] } }]">
+            {{mov.nombre}},
+          </a>
         </div>
       </div>
     </div>
