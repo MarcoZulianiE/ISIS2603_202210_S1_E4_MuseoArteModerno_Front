@@ -27,7 +27,7 @@ export class ArtistaListComponent implements OnInit {
   getArtistasFiltrados(substr: any): void {
     this.artistaService.getArtistas().subscribe((artistas) => {
       this.artistas = artistas.filter((a)=> {
-        return a.nombre.toLowerCase().indexOf(substr.toLowerCase()) != -1
+        return a.nombre.toLowerCase().match(substr.toLowerCase())
       })
       this.ordenar();
     });
