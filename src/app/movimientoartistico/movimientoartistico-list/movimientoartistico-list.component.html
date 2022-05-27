@@ -1,23 +1,32 @@
-<div class="recurso">
-  <h3>MOVIMIENTOS ARTISTICOS</h3>
-  <div *ngIf="selected">
-    <app-movimientoartistico-detalle [movimientoDetail]="selectedMovimiento"></app-movimientoartistico-detalle>
+<div>
+  <div class="row">
+    <div class="col-3">
+      <h3>ARTISTAS</h3>
+    </div>
+    <div class="col-5">
+      <br>
+    </div>
+    <div class="col-2">
+      <input type="text" class="form-control" placeholder="Filtro" id="filtro">
+    </div>
+    <div class="col-1">
+      <!-- <button (click)="filtrar()" type="button" class="btn btn-light">Filtrar</button> -->
+    </div>
+    <div class="col-1">
+      <!-- <button (click)="onSelected('Z..A')" *ngIf="tipoSort=='A..Z'" type="button" class="btn btn-light">A..Z</button> -->
+      <!-- <button (click)="onSelected('A..Z')" *ngIf="tipoSort!='A..Z'" type="button" class="btn btn-light">Z..A</button> -->
+    </div>
   </div>
-
-  <div class="container-fluid">
+  <div class="container vertical-scrollable">
     <div class="row">
-      <div class="col mb-2" *ngFor="let movimiento of movimientos">
-        <div class="card p-2" style="width: 15rem; height: 25rem">
-          <img class="card-img-top" src="{{ movimiento.imagen }}" alt="{{ movimiento.nombre }}"
-            (click)="onSelected(movimiento)" />
-          <div class="card-body">
+      <div class="col mb-3" *ngFor="let movimiento of movimientos">
+        <div class="card p-2" style="width: 12rem; height: 15rem">
+          <a class="text-decoration-none" [routerLink]="['', { outlets: { detalle: ['movimientosartisticos',movimiento.id] } } ]">
+            <img class="card-img-top" src="{{ movimiento.imagen }}" alt="{{ movimiento.nombre }}" />
             <h5 class="card-title">{{ movimiento.nombre }}</h5>
-            <p class="card-text">Fecha de Apogeo: {{ movimiento.fechaApogeo }}</p>
-            <p></p>
-          </div>
+          </a>
         </div>
       </div>
     </div>
   </div>
-  <hr class="division" />
 </div>

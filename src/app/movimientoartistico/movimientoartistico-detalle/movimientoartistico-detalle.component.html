@@ -1,28 +1,63 @@
-<div class="container-fluid">
-  <p class="h3 p-3">{{ movimientoDetail.nombre }}</p>
-  <div class="row">
-    <div class="col-2">
-      <div class="thumb">
-        <img
-          class="img-fluid"
-          src="{{ movimientoDetail.imagen }}"
-          alt="{{ movimientoDetail.nombre }}"
-        />
+<div class="detalle">
+  <br>
+  <div class="container-fluid centrado">
+    <div class="row">
+      <div class="col">
+        <br>
+        <h3 class="centrado">{{ movimientoDetail.nombre }}</h3>
+      </div>
+      <div class="col">
+        <div class="thumb">
+        <img class="img-fluid" src="{{ movimientoDetail.imagen }}" alt="{{ movimientoDetail.nombre }}" />
+      </div>
       </div>
     </div>
-    <div class="col">
-      <dl>
-        <dt>Fecha de Apogeo</dt>
-        <dd>{{movimientoDetail.fechaApogeo}}</dd>
-        <dt>Descripcion:</dt>
-        <dd>{{ movimientoDetail.descripcion}}</dd>
-        <hr />
-        <dt>Artistas</dt>
-        <dd class="caption" *ngFor="let author of movimientoDetail.artistas">
-          {{ author.nombre }}
-         </dd>
-        <hr />
-      </dl>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <dt>Nacimiento</dt>
+        <p>{{movimientoDetail.descripcion}}</p>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container-fluid">
+    <dt>Obras</dt>
+    <div class="container vertical-scrollable">
+      <div class="row text-center">
+        <div class="col mb-2" *ngFor="let obra of movimientoDetail.obras">
+          <a [routerLink]="['', { outlets: { primary: ['obras','list'], menusup: ['menusup'], detalle: ['obras',obra.id] } }]">
+            <div class="card p-2" style="width: 6rem; height: 6rem">
+            <img class="obra" src="{{obra.imagen}}" alt="">
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container-fluid">
+    <dt>Artistas</dt>
+    <div class="container vertical-scrollable-2">
+      <div class="row">
+        <div class="col mb-2" *ngFor="let artista of movimientoDetail.artistas">
+          <a [routerLink]="['', { outlets: { primary: ['artistas','list'], menusup: ['menusup'], detalle: ['artistas',artista.id] } }]">
+            {{artista.nombre}},
+          </a>
+        </div>
+      </div>
     </div>
   </div>
- </div>
+  <div class="container-fluid">
+    <dt>Museos</dt>
+    <div class="container vertical-scrollable-2">
+      <div class="row">
+        <div class="col mb-2" *ngFor="let museo of movimientoDetail.museos">
+          <a [routerLink]="['', { outlets: { primary: ['museos','list'], menusup: ['menusup'], detalle: ['museos',museo.id] } }]">
+            {{museo.nombre}},
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

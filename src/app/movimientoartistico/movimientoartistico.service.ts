@@ -17,4 +17,8 @@ constructor(private http: HttpClient) { }
   getMovimientosArtisticos(): Observable<MovimientoartisticoDetail[]>{
     return this.http.get<MovimientoartisticoDetail[]>(this.apiURL);
   }
+
+  getMovimientoArtistico(pId: string): Observable<MovimientoartisticoDetail>{
+    return this.http.get<MovimientoartisticoDetail>(this.apiURL + '/'+pId);
+  }
 }
