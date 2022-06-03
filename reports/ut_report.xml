@@ -1,42 +1,46 @@
 <testExecutions version="1">
-  <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should have as title 'museums-front'" duration="92"/>
-    <testCase name="AppComponent should create the app" duration="11"/>
-  </file>
-  <file path="src/app/artista/artista-list/artista-list.component.spec.ts">
-    <testCase name="ArtistaListComponent should create" duration="32"/>
-    <testCase name="ArtistaListComponent should have an img element " duration="15"/>
-  </file>
   <file path="src/app/obra/obra.service.spec.ts">
-    <testCase name="Service: Obra should ..." duration="4"/>
-  </file>
-  <file path="src/app/obra/obra-list/obra-list.component.spec.ts">
-    <testCase name="obraListComponent should create" duration="18"/>
+    <testCase name="Service: Obra should ..." duration="23"/>
   </file>
   <file path="src/app/museo/museo.service.spec.ts">
-    <testCase name="Service: Museo should ..." duration="3"/>
-  </file>
-  <file path="src/app/movimientoartistico/movimientoartistico-detalle/movimientoartistico-detalle.component.spec.ts">
-    <testCase name="MovimientoartisticoDetailComponent should have an img element" duration="16"/>
-    <testCase name="MovimientoartisticoDetailComponent should create" duration="8"/>
+    <testCase name="Service: Museo should ..." duration="9"/>
   </file>
   <file path="src/app/movimientoartistico/movimientoartistico-list/movimientoartistico-list.component.spec.ts">
-    <testCase name="MovimientoartisticoListComponent should create" duration="17"/>
-    <testCase name="MovimientoartisticoListComponent should have an img element " duration="12"/>
+    <testCase name="MovimientoartisticoListComponent should create" duration="126"/>
+    <testCase name="MovimientoartisticoListComponent should have an img element " duration="37"/>
   </file>
-  <file path="src/app/movimientoartistico/movimientoartistico.service.spec.ts">
-    <testCase name="Service: Movimientoartistico should ..." duration="2"/>
+  <file path="src/app/obra/obra-list/obra-list.component.spec.ts">
+    <testCase name="obraListComponent should create" duration="46"/>
+  </file>
+  <file path="src/app/app.component.spec.ts">
+    <testCase name="AppComponent should create the app" duration="77"/>
+    <testCase name="AppComponent should have as title 'museums-front'" duration="10"/>
   </file>
   <file path="src/app/artista/artista.service.spec.ts">
-    <testCase name="Service: Artista should ..." duration="2"/>
+    <testCase name="Service: Artista should ..." duration="5"/>
   </file>
-  <file path="src/app/ciudad/ciudad-detail/ciudad-detail.component.spec.ts">
-    <testCase name="CiudadDetailComponent should have an img element" duration="21"/>
+  <file path="src/app/artista/artista-detail/artista-detail.component.spec.ts">
+    <testCase name="ArtistaDetailComponent should have an img element" duration="71"/>
+    <testCase name="ArtistaDetailComponent should have an h3 element for artist name" duration="67"/>
+    <testCase name="ArtistaDetailComponent should have a div element for the detail" duration="48"/>
+    <testCase name="ArtistaDetailComponent should create" duration="30"/>
   </file>
   <file path="src/app/ciudad/ciudad.service.spec.ts">
-    <testCase name="Service: Ciudad should ..." duration="2"/>
+    <testCase name="Service: Ciudad should ..." duration="4"/>
+  </file>
+  <file path="src/app/artista/artista-list/artista-list.component.spec.ts">
+    <testCase name="ArtistaListComponent should create" duration="50"/>
+    <testCase name="ArtistaListComponent should have an img element " duration="14"/>
+    <testCase name="ArtistaListComponent should have a button element " duration="26"/>
+    <testCase name="ArtistaListComponent should have a h5 element with card-title class" duration="38"/>
+  </file>
+  <file path="src/app/movimientoartistico/movimientoartistico.service.spec.ts">
+    <testCase name="Service: Movimientoartistico should ..." duration="3"/>
+  </file>
+  <file path="src/app/ciudad/ciudad-detail/ciudad-detail.component.spec.ts">
+    <testCase name="CiudadDetailComponent should have an img element" duration="42"/>
   </file>
   <file path="src/app/pais/pais.service.spec.ts">
-    <testCase name="Service: Pais should ..." duration="3"/>
+    <testCase name="Service: Pais should ..." duration="7"/>
   </file>
 </testExecutions>
