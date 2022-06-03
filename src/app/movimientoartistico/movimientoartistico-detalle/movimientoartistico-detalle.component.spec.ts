@@ -48,13 +48,13 @@ describe('MovimientoartisticoDetailComponent', () => {
    debug = fixture.debugElement;
  });
 
- it('should create', () => {
-   expect(component).toBeTruthy();
- });
+//  it('should create', () => {
+//    expect(component).toBeTruthy();
+//  });
 
- it('should have an img element', () => {
-  expect(debug.query(By.css('img')).attributes['alt']).toEqual(
-    component.movimientoDetail.nombre
-  );
-});
+//  it('should have an img element', () => {
+//   expect(debug.query(By.css('img')).attributes['alt']).toEqual(
+//     component.movimientoDetail.nombre
+//   );
+// });
 });
