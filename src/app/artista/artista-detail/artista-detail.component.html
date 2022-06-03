@@ -52,7 +52,7 @@
       <div class="row">
         <div class="col-12 mb-2" *ngFor="let mov of artistaDetail.movimientos">
           <a [routerLink]="['', { outlets: { primary: ['movimientosartisticos','list'], menusup: ['menusup'], detalle: ['movimientosartisticos',mov.id] } }]">
-            {{mov.nombre}},
+            • {{mov.nombre}}
           </a>
         </div>
       </div>
@@ -64,7 +64,7 @@
       <div class="row">
         <div class="col-12 mb-2" *ngFor="let mus of artistaDetail.museos">
           <a [routerLink]="['', { outlets: { primary: ['museos','list'], menusup: ['menusup'], detalle: ['museos',mus.id] } }]">
-            {{mus.nombre}},
+            • {{mus.nombre}}
           </a>
         </div>
       </div>
