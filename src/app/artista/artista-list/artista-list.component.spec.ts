@@ -49,14 +49,22 @@ describe('ArtistaListComponent', () => {
    debug = fixture.debugElement;
  });
 
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+
+  it('should have a button element ', () => {
+    expect(debug.query(By.css('button')).attributes['title']).toEqual( "filtrar" );
+  });
+
+  it('should have a h5 element with card-title class', () => {
+    expect(debug.query(By.css('h5')).attributes['class']).toEqual( "card-title" );
+  });
+
   it('should have an img element ', () => {
     expect(debug.query(By.css('img')).attributes['alt']).toEqual(
       component.artistas[0].nombre
     );
   });
-
- it('should create', () => {
-   expect(component).toBeTruthy();
- });
 
 });
