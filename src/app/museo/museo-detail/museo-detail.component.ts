@@ -1,18 +1,43 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, OnDestroy } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { MuseoDetail } from '../museo-detail';
+import { MuseoService } from '../museo.service';
 
 @Component({
   selector: 'app-museo-detail',
   templateUrl: './museo-detail.component.html',
   styleUrls: ['./museo-detail.component.css']
 })
-export class MuseoDetailComponent implements OnInit {
+export class MuseoDetailComponent implements OnInit, OnDestroy {
 
-  @Input() museoDetail!: MuseoDetail;
+  loader: any;
+  museoId!: string;
+  museoDetail!: MuseoDetail;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute,
+    private museoService: MuseoService) {
+  }
+
+  getMuseo() {
+    var _this = this;
+    this.museoService.getMuseo(this.museoId)
+            .subscribe(function (o) {
+            _this.museoDetail = o;
+    });
+  }
+
+  onLoad (params : any) {
+    this.museoId = params['id'];
+    this.getMuseo();
+  };
 
   ngOnInit() {
+    var _this = this;
+    this.loader = this.route.params.subscribe(function (params) { return _this.onLoad(params); });
+  }
+
+  ngOnDestroy () {
+    this.loader.unsubscribe();
   }
 
 }

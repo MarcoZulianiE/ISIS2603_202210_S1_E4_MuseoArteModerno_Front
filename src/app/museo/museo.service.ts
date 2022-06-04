@@ -10,12 +10,16 @@ import { MuseoDetail } from './museo-detail';
 })
 export class MuseoService {
 
-  private apiUrl = environment.baseUrl + 'Museos';
+  private apiUrl: string = environment.baseUrl + 'Museos';
 
   constructor(private http: HttpClient) { }
 
   getMuseos(): Observable<MuseoDetail[]>{
     return this.http.get<MuseoDetail[]>(this.apiUrl);
+  }
+
+  getMuseo(id : string): Observable<MuseoDetail> {
+    return this.http.get<MuseoDetail>(this.apiUrl + "/" + id);
   }
 
 

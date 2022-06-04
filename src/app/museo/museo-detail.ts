@@ -6,7 +6,7 @@ import {Movimientoartistico} from "../movimientoartistico/movimientoartistico";
 
 export class MuseoDetail extends Museo{
 
-  artistias: Array<Artista> = [];
+  artistas: Array<Artista> = [];
   obras: Array<Obra> = [];
   movimientos: Array<Movimientoartistico> = [];
 
@@ -25,7 +25,7 @@ export class MuseoDetail extends Museo{
     )
   {
     super (id, nombre, img, direccion, salasExposicion, totalObrasExhibidas, ubicacion);
-      this.artistias = artistas;
+      this.artistas = artistas;
       this.obras = obras;
       this.movimientos = movimientos;
   }
