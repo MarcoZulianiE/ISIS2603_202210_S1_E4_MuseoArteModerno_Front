@@ -6,11 +6,11 @@ import { Movimientoartistico } from "../movimientoartistico/movimientoartistico"
 
 export class Obra {
   id: number;
-  nombre: String;
-  tipo: String;
-  descripcion: String;
+  nombre: string;
+  tipo: string;
+  descripcion: string;
   fechaPublicacion: Date;
-  imagen : String;
+  imagen : string;
 
   museo: Museo;
   artista: Artista;
@@ -18,8 +18,8 @@ export class Obra {
 
 
 
-  constructor(id: number, nombre: String, tipo: String, descripcion: String,
-    fechaPublicacion: Date, imagen: String,  museo: Museo, artista: Artista, movimiento: Movimientoartistico
+  constructor(id: number, nombre: string, tipo: string, descripcion: string,
+    fechaPublicacion: Date, imagen: string,  museo: Museo, artista: Artista, movimiento: Movimientoartistico
   ) {
     this.id = id;
     this.nombre = nombre;

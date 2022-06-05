@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Obra } from '../obra';
 import { ObraDetail} from '../obra-detail';
 import { ObraService } from '../obra.service';
 
@@ -12,7 +11,7 @@ export class ObraListComponent implements OnInit {
 
 
   obras: Array<ObraDetail> = [];
-  selected: Boolean = false;
+  selected: boolean = false;
   selectedObra! : ObraDetail;
 
   constructor(private obraService: ObraService) { }
