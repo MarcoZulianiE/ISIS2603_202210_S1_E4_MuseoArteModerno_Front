@@ -1,5 +1,5 @@
-import { Component, Input, OnInit, OnDestroy } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { ArtistaDetail } from '../artista-detail';
 import { ArtistaService } from '../artista.service';
 
@@ -29,7 +29,7 @@ export class ArtistaDetailComponent implements OnInit, OnDestroy {
   onLoad (params : any) {
     this.artistaId = params['id'];
     this.getArtista();
-  };
+  }
 
   ngOnInit() {
     var _this = this;
@@ -38,5 +38,5 @@ export class ArtistaDetailComponent implements OnInit, OnDestroy {
 
   ngOnDestroy () {
     this.loader.unsubscribe();
-  };
+  }
 }
