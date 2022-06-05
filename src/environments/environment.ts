@@ -10,7 +10,6 @@ const rootApi = 'api'
 
 export const environment = {
   production: true,
-  mapBoxToken: 'pk.eyJ1Ijoibmljb21iIiwiYSI6ImNsMnVoOWZpMzAxeTMzaXAycDNqemZtNGsifQ.jlCEwM8-hP22aGLzWCCGhg',
   baseUrl: `http://${host}:${port}/${rootApi}/`
 };
 /*

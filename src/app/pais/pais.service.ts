@@ -17,4 +17,8 @@ export class PaisService {
     return this.http.get<PaisDetail[]>(this.apiUrl);
   }
 
+  getPais(id : string): Observable<PaisDetail> {
+    return this.http.get<PaisDetail>(this.apiUrl + "/" + id);
+  }
+
 }
