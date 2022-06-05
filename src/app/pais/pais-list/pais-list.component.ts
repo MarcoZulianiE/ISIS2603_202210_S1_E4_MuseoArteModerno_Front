@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Pais} from '../pais'
 import { PaisService } from '../pais.service';
 import { PaisDetail } from '../pais-detail';
-import { PaisDetailComponent } from '../pais-detail/pais-detail.component';
 
 
 
@@ -14,7 +12,7 @@ import { PaisDetailComponent } from '../pais-detail/pais-detail.component';
 export class PaisListComponent implements OnInit {
 
   paises: Array<PaisDetail> = [];
-  selected: Boolean = false;
+  selected: boolean = false;
   selectedPais!: PaisDetail;
 
   constructor(private paisService: PaisService) { }
