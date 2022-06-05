@@ -5,11 +5,11 @@ export class Museo {
   nombre: string;
   img: string;
   direccion: string;
-  salasExposicion: Array<String>;
+  salasExposicion: Array<string>;
   totalObrasExhibidas: number;
   ubicacion: Pais;
 
-  constructor(id: number, nombre: string, img: string, direccion: string, salasExposicion: Array<String>,
+  constructor(id: number, nombre: string, img: string, direccion: string, salasExposicion: Array<string>,
     totalObrasExhibidas: number, ubicacion: Pais)
     {
       this.id = id;

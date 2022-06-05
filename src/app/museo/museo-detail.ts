@@ -15,7 +15,7 @@ export class MuseoDetail extends Museo{
     nombre: string,
     img: string,
     direccion: string,
-    salasExposicion: Array<String>,
+    salasExposicion: Array<string>,
     totalObrasExhibidas: number,
     ubicacion: Pais,
     artistas: Array<Artista>,

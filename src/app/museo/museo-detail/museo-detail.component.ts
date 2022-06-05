@@ -1,5 +1,5 @@
-import { Component, Input, OnInit, OnDestroy } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { MuseoDetail } from '../museo-detail';
 import { MuseoService } from '../museo.service';
 
@@ -29,7 +29,7 @@ export class MuseoDetailComponent implements OnInit, OnDestroy {
   onLoad (params : any) {
     this.museoId = params['id'];
     this.getMuseo();
-  };
+  }
 
   ngOnInit() {
     var _this = this;

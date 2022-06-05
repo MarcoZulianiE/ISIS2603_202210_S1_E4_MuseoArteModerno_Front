@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Museo  } from '../museo';
 import { MuseoService } from '../museo.service';
 import { MuseoDetail } from '../museo-detail';
 
