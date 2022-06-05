@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Ciudad } from '../ciudad';
 import { CiudadService } from '../ciudad.service';
 import { CiudadDetail } from '../ciudad-detail';
-import { CiudadDetailComponent } from '../ciudad-detail/ciudad-detail.component';
 
 @Component({
   selector: 'app-ciudad-list',
@@ -13,7 +12,7 @@ export class CiudadListComponent implements OnInit {
 
   constructor(private ciudadService: CiudadService) { }
   ciudades: Array<Ciudad> = [];
-  selected: Boolean = false;
+  selected: boolean = false;
   selectedCiudad!: CiudadDetail;
 
   ngOnInit() {

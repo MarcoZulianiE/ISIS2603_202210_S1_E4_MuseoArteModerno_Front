@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Ciudad } from './ciudad';
 import { CiudadDetail } from './ciudad-detail';
 
 import { environment } from '../../environments/environment';
