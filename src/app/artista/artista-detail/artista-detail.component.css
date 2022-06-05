@@ -31,6 +31,10 @@ h3 {
   vertical-align: middle;
 }
 
+h6 {
+  font-weight: bold;
+}
+
 .vertical-scrollable>.row {
   height: 14vh;
   overflow-y: auto;
