@@ -39,28 +39,19 @@ export class ArtistaListComponent implements OnInit {
   }
 
   ordenar () : void {
-    var artists = this.artistas;
+
     if (this.tipoSort=='A..Z') {
-      artists.sort((a,b)=> {
+      this.artistas.sort((a,b)=> {
         if(a.nombre > b.nombre) return 1;
         if(a.nombre <= b.nombre) return -1;
         return 0;
       });
     } else if (this.tipoSort=='Z..A') {
-      artists = artists.sort((a,b)=> {
-        if(a.nombre > b.nombre) return 1;
-        if(a.nombre <= b.nombre) return -1;
+      this.artistas.sort((a,b)=> {
+        if(a.nombre < b.nombre) return 1;
+        if(a.nombre >= b.nombre) return -1;
         return 0;
       });
-    }
-    this.artistas = artists;
-  }
-
-  funcSort () {
-    return function sortFunc (a : ArtistaDetail, b : ArtistaDetail) {
-      if(a.nombre < b.nombre) return 1;
-      if(a.nombre >= b.nombre) return -1;
-      return 0;
     }
   }
 
