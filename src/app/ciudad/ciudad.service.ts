@@ -17,4 +17,7 @@ constructor(private http: HttpClient) { }
 getCiudades(): Observable<CiudadDetail[]> {
   return this.http.get<CiudadDetail[]>(this.apiUrl);
 }
+getCiudad(id: string): Observable<CiudadDetail> {
+  return this.http.get<CiudadDetail>(this.apiUrl + "/" + id);
+}
 }

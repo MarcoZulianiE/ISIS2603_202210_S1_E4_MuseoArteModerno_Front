@@ -40,6 +40,15 @@ describe('CiudadDetailComponent', () => {
     );
   });
 
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  }
+  );
+
+  it('should have a div element for the detail', () => {
+    expect(debug.query(By.css('div')).attributes['class']).toEqual('detalle');
+  });
+
   // it('should create', () => {
   //   expect(component).toBeTruthy();
   // });
