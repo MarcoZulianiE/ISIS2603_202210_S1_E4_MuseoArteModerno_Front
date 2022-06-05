@@ -3,8 +3,10 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 import { Pais } from 'src/app/pais/pais';
+import { faker } from '@faker-js/faker';
+import { HttpClientModule } from '@angular/common/http';
 
-
+import { CiudadDetail } from '../ciudad-detail';
 import { CiudadListComponent } from './ciudad-list.component';
 import { CiudadService } from '../ciudad.service';
 
@@ -16,6 +18,7 @@ describe('CiudadListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [HttpClientModule],
       declarations: [ CiudadListComponent ],
       providers:[CiudadService]
     })
@@ -31,13 +34,13 @@ describe('CiudadListComponent', () => {
       faker.lorem.sentence(),
       faker.image.imageUrl()
     );
-    component.ciudad = (
+    component.ciudades = [
       new CiudadDetail(faker.datatype.number(),faker.lorem.sentence(),
       faker.lorem.imageUrl(),
       faker.image.sentence(),
       pais
       ),
-  );
+    ];
     fixture.detectChanges();
   });
 
@@ -49,7 +52,7 @@ describe('CiudadListComponent', () => {
   });
   it('should have an img element ', () => {
     expect(debug.query(By.css('img')).attributes['alt']).toEqual(
-      component.ciudad.nombre
+      component.ciudades[0].nombre
     );
   });
 

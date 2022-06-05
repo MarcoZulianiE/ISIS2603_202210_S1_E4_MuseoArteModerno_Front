@@ -1,0 +1,54 @@
+img {
+  height: 7rem;
+  width: 7rem;
+}
+
+img.obra {
+  height: 5rem;
+  width: 5rem;
+}
+
+p.text-align-center {
+  text-align: center;
+  vertical-align: middle;
+}
+
+hr.division {
+  border-top: 1px dotted black;
+}
+
+div.centrado {
+  align-self: center;
+  text-align: center;
+  align-content: center;
+}
+
+h3 {
+  text-align: center;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.vertical-scrollable>.row {
+  height: 14vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.vertical-scrollable-2>.row {
+  height: 8vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+h6 {
+  font-weight: bold;
+}
+
+div.detalle {
+  border-left: 1px solid black;
+}
+
+a {
+  color:black;
+  text-decoration: none;
+}

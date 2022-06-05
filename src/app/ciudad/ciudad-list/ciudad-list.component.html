@@ -1,20 +1,30 @@
-<div class="recurso">
-  <h3>CIUDADES</h3>
-  <div *ngIf="selected">
-    <app-ciudad-detail></app-ciudad-detail>
+<div>
+  <div class="row">
+    <div class="col-8">
+      <br>
+    </div>
+    <div class="col-2">
+      <input type="text" class="form-control" placeholder="Filtro" id="filtro">
+    </div>
+    <div class="col-1">
+      <button (click)="filtrar()" type="button" class="btn btn-light" title="filtrar">Filtrar</button>
+    </div>
+    <div class="col-1">
+      <button (click)="onSelected('Z..A')" *ngIf="tipoSort=='A..Z'" type="button" class="btn btn-light" title="a..z">A..Z</button>
+      <button (click)="onSelected('A..Z')" *ngIf="tipoSort!='A..Z'" type="button" class="btn btn-light" title="z..a">Z..A</button>
+    </div>
   </div>
-  <div class="container-fluid">
+  <hr>
+  <div class="container vertical-scrollable">
     <div class="row">
-      <div class="col mb-2" *ngFor="let ciudad of ciudades">
-        <div class="card p-2" style="width: 15rem; height: 24rem">
-          <img class="card-img-top" src="{{ ciudad.imagen }}" alt="{{ ciudad.nombre }}" (click)="onSelected(ciudad)" />
-          <div class="card-body">
+      <div class="col mb-3" *ngFor="let ciudad of ciudades">
+        <div class="card p-2" style="width: 12rem; height: 15rem">
+          <a class="text-decoration-none" [routerLink]="['', { outlets: { detalle: ['ciudades', ciudad.id] } } ]">
+            <img class="card-img-top" src="{{ ciudad.imagen }}" alt="{{ ciudad.nombre }}" />
             <h5 class="card-title">{{ ciudad.nombre }}</h5>
-            <p class="card-text">[{{ ciudad. coordenadasCiudad}}]</p>
-          </div>
+          </a>
         </div>
       </div>
     </div>
   </div>
-  <hr class="division" />
 </div>
