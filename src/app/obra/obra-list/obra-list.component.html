@@ -18,7 +18,7 @@
   <div class="container vertical-scrollable">
     <div class="row">
       <div class="col mb-3" *ngFor="let o of obras">
-        <div class="card p-2" style="width: 15rem; height: 20rem">
+        <div class="card p-2" style="width: 12rem; height: 15rem">
           <a class="text-decoration-none" [routerLink]="['', { outlets: { detalle: ['obras',o.id] } } ]">
             <img class="card-img-top" src="{{ o.imagen }}" alt="{{ o.nombre }}" />
             <h5 class="card-title">{{ o.nombre }}</h5>

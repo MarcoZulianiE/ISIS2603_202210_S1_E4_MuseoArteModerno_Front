@@ -1,11 +1,6 @@
 img {
-  height: 14rem;
-  width: 14rem;
-}
-
-div.recurso {
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
+  height: 11rem;
+  width: 11rem;
 }
 
 h3 {
@@ -26,4 +21,10 @@ h5 {
   font-weight: bolder;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+}
+
+.vertical-scrollable>.row {
+  height: 77vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
