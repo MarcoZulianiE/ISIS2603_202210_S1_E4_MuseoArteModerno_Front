@@ -34,21 +34,13 @@ describe('PaisDetailComponent', () => {
     fixture = TestBed.createComponent(PaisDetailComponent);
     component = fixture.componentInstance;
 
-    let pais = new Pais(
-      faker.datatype.number(),
-      faker.lorem.sentence(),
-      faker.lorem.sentence(),
-      faker.image.imageUrl()
-    );
-
     component.paisDetail = new PaisDetail(
       faker.datatype.number(),
       faker.lorem.sentence(),
+      faker.lorem.sentence(),
       faker.image.imageUrl(),
-      faker.date.past(),
-      faker.date.past(),
-      pais,
-      pais,
+      [],
+      [],
       [],
       [],
       []

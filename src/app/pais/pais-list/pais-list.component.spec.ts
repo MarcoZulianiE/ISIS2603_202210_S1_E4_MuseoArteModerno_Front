@@ -29,19 +29,12 @@ describe('PaisListComponent', () => {
     fixture = TestBed.createComponent(PaisListComponent);
     component = fixture.componentInstance;
 
-    let pais = new Pais(
-      faker.datatype.number(),
-      faker.lorem.sentence(),
-      faker.lorem.sentence(),
-      faker.image.imageUrl()
-    );
     component.paises = [
       new PaisDetail(faker.datatype.number(),faker.lorem.sentence(),
+      faker.lorem.sentence(),
       faker.image.imageUrl(),
-      faker.date.past(),
-      faker.date.past(),
-      pais,
-      pais,
+      [],
+      [],
       [],
       [],
       []),
