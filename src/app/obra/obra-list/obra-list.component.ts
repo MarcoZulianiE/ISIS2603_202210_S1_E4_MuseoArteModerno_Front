@@ -39,13 +39,13 @@ export class ObraListComponent implements OnInit {
 
   sortObras(): void {
     if (this.tipoSort == 'A..Z') {
-      this.obras = this.obras.sort((a, b) => {
+      this.obras.sort((a, b) => {
         if (a.nombre > b.nombre) return 1;
         if (a.nombre <= b.nombre) return -1;
         return 0;
       });
     } else if (this.tipoSort == 'Z..A') {
-      this.obras = this.obras.sort((a, b) => {
+       this.obras.sort((a, b) => {
         if (a.nombre < b.nombre) return 1;
         if (a.nombre >= b.nombre) return -1;
         return 0;
