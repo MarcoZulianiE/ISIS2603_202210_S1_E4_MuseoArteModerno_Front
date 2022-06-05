@@ -18,6 +18,10 @@ export class ObraService {
     return this.http.get<ObraDetail[]>(this.apiUrl)
     }
 
+  getObra(id : string ) : Observable<ObraDetail>{
+    return this.http.get<ObraDetail>(this.apiUrl + "/" + id);
+  }
+
 
 
 }

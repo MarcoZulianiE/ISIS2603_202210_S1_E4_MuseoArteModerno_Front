@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ObraDetail} from '../obra-detail';
+
+import { ObraDetail } from '../obra-detail';
 import { ObraService } from '../obra.service';
 
 @Component({
@@ -9,23 +10,55 @@ import { ObraService } from '../obra.service';
 })
 export class ObraListComponent implements OnInit {
 
-
   obras: Array<ObraDetail> = [];
-  selected: boolean = false;
-  selectedObra! : ObraDetail;
+  selectedObra!: ObraDetail;
+  tipoSort: string = 'A..Z';
 
   constructor(private obraService: ObraService) { }
 
 
-  onSelected(pObra: ObraDetail):void{
-    this.selected = true;
-    this.selectedObra = pObra;
+  onSelected(sortSty: string): void {
+    this.tipoSort = sortSty;
+    this.sortObras();
   }
-  getObras(){
-      this.obraService.getObras().subscribe(obras => {
-        this.obras = obras;
-      })
+  getObras(): void {
+    this.obraService.getObras().subscribe(obras => {
+      this.obras = obras;
+    })
 
+  }
+
+  getObrasFilter(str: any): void {
+    this.obraService.getObras().subscribe((obras) => {
+      this.obras = obras.filter((a) => {
+        return a.nombre.toLowerCase().match(str.toLowerCase())
+      })
+      this.sortObras();
+    });
+  }
+
+  sortObras(): void {
+    if (this.tipoSort == 'A..Z') {
+      this.obras = this.obras.sort((a, b) => {
+        if (a.nombre > b.nombre) return 1;
+        if (a.nombre <= b.nombre) return -1;
+        return 0;
+      });
+    } else if (this.tipoSort == 'Z..A') {
+      this.obras = this.obras.sort((a, b) => {
+        if (a.nombre < b.nombre) return 1;
+        if (a.nombre >= b.nombre) return -1;
+        return 0;
+      });
+    }
+  }
+
+  filterObras() {
+    if (document.querySelector('input')?.value == '') {
+      this.getObras();
+    } else {
+      this.getObrasFilter(document.querySelector('input')?.value);
+    }
   }
 
   ngOnInit() {

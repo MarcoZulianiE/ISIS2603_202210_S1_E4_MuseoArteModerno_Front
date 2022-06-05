@@ -9,7 +9,7 @@ import { ObraRoutingModule } from './obra-routing.module';
     CommonModule,
     ObraRoutingModule
   ],
-  exports: [ObraListComponent],
+  exports: [ObraListComponent, ObraDetailComponent],
   declarations: [ObraListComponent, ObraDetailComponent]
 })
 export class ObraModule { }

@@ -1,87 +1,96 @@
 <testExecutions version="1">
-  <file path="src/app/pais/pais-detail/pais-detail.component.spec.ts">
-    <testCase name="PaisDetailComponent should create" duration="245"/>
-    <testCase name="PaisDetailComponent should have a div element for the detail" duration="24"/>
-    <testCase name="PaisDetailComponent should have an img element" duration="13"/>
-    <testCase name="PaisDetailComponent should have an h3 element for pais name" duration="53"/>
-  </file>
-  <file path="src/app/menu-general/menu-general.component.spec.ts">
-    <testCase name="MenuGeneralComponent should create" duration="21"/>
-    <testCase name="MenuGeneralComponent should have an image element " duration="15"/>
-  </file>
   <file path="src/app/menu-superior/menu-superior.component.spec.ts">
-    <testCase name="MenuSuperiorComponent should have an h3 element " duration="34"/>
-    <testCase name="MenuSuperiorComponent should create" duration="7"/>
+    <testCase name="MenuSuperiorComponent should create" duration="104"/>
+    <testCase name="MenuSuperiorComponent should have an h3 element " duration="14"/>
   </file>
-  <file path="src/app/obra/obra.service.spec.ts">
-    <testCase name="Service: Obra should ..." duration="23"/>
-  </file>
-  <file path="src/app/artista/artista.service.spec.ts">
-    <testCase name="Service: Artista should ..." duration="3"/>
-  </file>
-  <file path="src/app/ciudad/ciudad-detail/ciudad-detail.component.spec.ts">
-    <testCase name="CiudadDetailComponent should have an img element" duration="18"/>
-  </file>
-  <file path="src/app/ciudad/ciudad.service.spec.ts">
-    <testCase name="Service: Ciudad should ..." duration="4"/>
-  </file>
-  <file path="src/app/obra/obra-list/obra-list.component.spec.ts">
-    <testCase name="obraListComponent should create" duration="41"/>
-  </file>
-  <file path="src/app/artista/artista-detail/artista-detail.component.spec.ts">
-    <testCase name="ArtistaDetailComponent should have an h3 element for artist name" duration="52"/>
-    <testCase name="ArtistaDetailComponent should create" duration="21"/>
-    <testCase name="ArtistaDetailComponent should have an img element" duration="24"/>
-    <testCase name="ArtistaDetailComponent should have a div element for the detail" duration="24"/>
-  </file>
-  <file path="src/app/movimientoartistico/movimientoartistico-detalle/movimientoartistico-detalle.component.spec.ts">
-    <testCase name="MovimientoartisticoDetailComponent should have an img element" duration="39"/>
-    <testCase name="MovimientoartisticoDetailComponent should have an h3 element for movimiento name" duration="12"/>
-    <testCase name="MovimientoartisticoDetailComponent should create" duration="10"/>
-    <testCase name="MovimientoartisticoDetailComponent should have a div element for the detail" duration="16"/>
+  <file path="src/app/pais/pais-detail/pais-detail.component.spec.ts">
+    <testCase name="PaisDetailComponent should have an img element" duration="100"/>
+    <testCase name="PaisDetailComponent should have an h3 element for pais name" duration="24"/>
+    <testCase name="PaisDetailComponent should create" duration="11"/>
+    <testCase name="PaisDetailComponent should have a div element for the detail" duration="8"/>
   </file>
   <file path="src/app/pais/pais.service.spec.ts">
-    <testCase name="Service: Pais should ..." duration="9"/>
+    <testCase name="Service: Pais should ..." duration="2"/>
   </file>
-  <file path="src/app/artista/artista-list/artista-list.component.spec.ts">
-    <testCase name="ArtistaListComponent should create" duration="77"/>
-    <testCase name="ArtistaListComponent should have a h5 element with card-title class" duration="16"/>
-    <testCase name="ArtistaListComponent should have a button element " duration="7"/>
-    <testCase name="ArtistaListComponent should have an img element " duration="9"/>
+  <file path="src/app/obra/obra-list/obra-list.component.spec.ts">
+    <testCase name="obraListComponent should have an img element " duration="45"/>
+    <testCase name="obraListComponent should have a h5 element with card-title class" duration="11"/>
+    <testCase name="obraListComponent should create" duration="10"/>
+    <testCase name="obraListComponent should have a button element " duration="8"/>
   </file>
-  <file path="src/app/pais/pais-list/pais-list.component.spec.ts">
-    <testCase name="PaisListComponent should create" duration="48"/>
-    <testCase name="PaisListComponent should have a button element " duration="31"/>
-    <testCase name="PaisListComponent should have a h5 element with card-title class" duration="38"/>
-    <testCase name="PaisListComponent should have an img element " duration="13"/>
-  </file>
-  <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should create the app" duration="15"/>
-    <testCase name="AppComponent should have as title 'museums-front'" duration="19"/>
-  </file>
-  <file path="src/app/museo/museo-list/museo-list.component.spec.ts">
-    <testCase name="MuseoListComponent should have an img element " duration="16"/>
-    <testCase name="MuseoListComponent should have a h5 element with card-title class" duration="31"/>
-    <testCase name="MuseoListComponent should have a button element " duration="27"/>
-    <testCase name="MuseoListComponent should create" duration="12"/>
+  <file path="src/app/obra/obra.service.spec.ts">
+    <testCase name="Service: Obra should ..." duration="4"/>
   </file>
   <file path="src/app/museo/museo.service.spec.ts">
-    <testCase name="Service: Museo should ..." duration="2"/>
+    <testCase name="Service: Museo should ..." duration="3"/>
   </file>
-  <file path="src/app/movimientoartistico/movimientoartistico.service.spec.ts">
-    <testCase name="Service: Movimientoartistico should ..." duration="2"/>
+  <file path="src/app/artista/artista-detail/artista-detail.component.spec.ts">
+    <testCase name="ArtistaDetailComponent should have an img element" duration="34"/>
+    <testCase name="ArtistaDetailComponent should have an h3 element for artist name" duration="10"/>
+    <testCase name="ArtistaDetailComponent should create" duration="17"/>
+    <testCase name="ArtistaDetailComponent should have a div element for the detail" duration="8"/>
   </file>
-  <file path="src/app/museo/museo-detail/museo-detail.component.spec.ts">
-    <testCase name="MuseoDetailComponent should have an h3 element for museums name" duration="51"/>
-    <testCase name="MuseoDetailComponent should create" duration="7"/>
-    <testCase name="MuseoDetailComponent should have a div element for the detail" duration="30"/>
-    <testCase name="MuseoDetailComponent should have an img element " duration="14"/>
+  <file path="src/app/obra/obra-detail/obra-detail.component.spec.ts">
+    <testCase name="ObraDetailComponent should create" duration="24"/>
+    <testCase name="ObraDetailComponent should have an img element" duration="12"/>
+    <testCase name="ObraDetailComponent should have a div element for the detail" duration="10"/>
+    <testCase name="ObraDetailComponent should have an h3 element for artist name" duration="8"/>
+  </file>
+  <file path="src/app/artista/artista-list/artista-list.component.spec.ts">
+    <testCase name="ArtistaListComponent should create" duration="15"/>
+    <testCase name="ArtistaListComponent should have a button element " duration="8"/>
+    <testCase name="ArtistaListComponent should have a h5 element with card-title class" duration="11"/>
+    <testCase name="ArtistaListComponent should have an img element " duration="15"/>
+  </file>
+  <file path="src/app/artista/artista.service.spec.ts">
+    <testCase name="Service: Artista should ..." duration="2"/>
+  </file>
+  <file path="src/app/ciudad/ciudad.service.spec.ts">
+    <testCase name="Service: Ciudad should ..." duration="3"/>
+  </file>
+  <file path="src/app/ciudad/ciudad-detail/ciudad-detail.component.spec.ts">
+    <testCase name="CiudadDetailComponent should have an img element" duration="12"/>
+  </file>
+  <file path="src/app/museo/museo-list/museo-list.component.spec.ts">
+    <testCase name="MuseoListComponent should have a button element " duration="16"/>
+    <testCase name="MuseoListComponent should create" duration="8"/>
+    <testCase name="MuseoListComponent should have an img element " duration="7"/>
+    <testCase name="MuseoListComponent should have a h5 element with card-title class" duration="7"/>
+  </file>
+  <file path="src/app/menu-general/menu-general.component.spec.ts">
+    <testCase name="MenuGeneralComponent should create" duration="13"/>
+    <testCase name="MenuGeneralComponent should have an image element " duration="8"/>
   </file>
   <file path="src/app/movimientoartistico/movimientoartistico-list/movimientoartistico-list.component.spec.ts">
-    <testCase name="MovimientoartisticoListComponent should create" duration="36"/>
-    <testCase name="MovimientoartisticoListComponent should have a button element " duration="31"/>
-    <testCase name="MovimientoartisticoListComponent should have a h5 element with card-title class" duration="28"/>
-    <testCase name="MovimientoartisticoListComponent should have an img element " duration="29"/>
-    <testCase name="MovimientoartisticoListComponent should create" duration="7"/>
+    <testCase name="MovimientoartisticoListComponent should create" duration="19"/>
+    <testCase name="MovimientoartisticoListComponent should create" duration="6"/>
+    <testCase name="MovimientoartisticoListComponent should have a h5 element with card-title class" duration="7"/>
+    <testCase name="MovimientoartisticoListComponent should have a button element " duration="8"/>
+    <testCase name="MovimientoartisticoListComponent should have an img element " duration="13"/>
+  </file>
+  <file path="src/app/movimientoartistico/movimientoartistico.service.spec.ts">
+    <testCase name="Service: Movimientoartistico should ..." duration="3"/>
+  </file>
+  <file path="src/app/movimientoartistico/movimientoartistico-detalle/movimientoartistico-detalle.component.spec.ts">
+    <testCase name="MovimientoartisticoDetailComponent should have a div element for the detail" duration="19"/>
+    <testCase name="MovimientoartisticoDetailComponent should have an img element" duration="9"/>
+    <testCase name="MovimientoartisticoDetailComponent should have an h3 element for movimiento name" duration="11"/>
+    <testCase name="MovimientoartisticoDetailComponent should create" duration="6"/>
+  </file>
+  <file path="src/app/app.component.spec.ts">
+    <testCase name="AppComponent should create the app" duration="9"/>
+    <testCase name="AppComponent should have as title 'museums-front'" duration="6"/>
+  </file>
+  <file path="src/app/pais/pais-list/pais-list.component.spec.ts">
+    <testCase name="PaisListComponent should create" duration="13"/>
+    <testCase name="PaisListComponent should have an img element " duration="8"/>
+    <testCase name="PaisListComponent should have a button element " duration="8"/>
+    <testCase name="PaisListComponent should have a h5 element with card-title class" duration="9"/>
+  </file>
+  <file path="src/app/museo/museo-detail/museo-detail.component.spec.ts">
+    <testCase name="MuseoDetailComponent should have an img element " duration="16"/>
+    <testCase name="MuseoDetailComponent should have a div element for the detail" duration="7"/>
+    <testCase name="MuseoDetailComponent should have an h3 element for museums name" duration="9"/>
+    <testCase name="MuseoDetailComponent should create" duration="6"/>
   </file>
 </testExecutions>

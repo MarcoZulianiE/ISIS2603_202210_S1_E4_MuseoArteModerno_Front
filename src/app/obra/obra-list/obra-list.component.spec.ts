@@ -6,12 +6,12 @@ import { faker } from '@faker-js/faker';
 
 import { ObraListComponent } from './obra-list.component';
 import { HttpClientModule } from '@angular/common/http';
-import { Pais } from 'src/app/pais/pais';
 import { Museo } from 'src/app/museo/museo';
 import { Artista } from 'src/app/artista/artista';
 import { Movimientoartistico } from 'src/app/movimientoartistico/movimientoartistico';
 import { ObraDetail } from '../obra-detail';
 import { ObraService } from '../obra.service';
+import { Pais } from 'src/app/pais/pais';
 
 describe('obraListComponent', () => {
  let component: ObraListComponent;
@@ -60,6 +60,7 @@ describe('obraListComponent', () => {
      faker.date.past(),
      pais,
      pais)
+
    component.obras = [
      new ObraDetail(
        faker.datatype.number(),
@@ -78,13 +79,21 @@ describe('obraListComponent', () => {
  });
 
  it('should create', () => {
-   expect(component).toBeTruthy();
- });
+  expect(component).toBeTruthy();
+});
 
-//  it('should have an img element ', () => {
-//   expect(debug.query(By.css('img')).attributes['alt']).toEqual(
-//     component.obras[0].nombre
-//   );
-// });
+it('should have a button element ', () => {
+  expect(debug.query(By.css('button')).attributes['title']).toEqual( "filtrar" );
+});
+
+it('should have a h5 element with card-title class', () => {
+  expect(debug.query(By.css('h5')).attributes['class']).toEqual( "card-title" );
+});
+
+it('should have an img element ', () => {
+  expect(debug.query(By.css('img')).attributes['alt']).toEqual(
+    component.obras[0].nombre
+  );
+});
 
 });
