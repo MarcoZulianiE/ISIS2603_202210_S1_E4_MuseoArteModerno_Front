@@ -42,6 +42,10 @@ h3 {
   overflow-x: hidden;
 }
 
+h6 {
+  font-weight: bold;
+}
+
 div.detalle {
   border-left: 1px solid black;
 }
