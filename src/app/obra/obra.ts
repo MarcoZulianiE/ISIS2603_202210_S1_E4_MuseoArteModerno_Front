@@ -14,7 +14,7 @@ export class Obra {
 
   museo: Museo;
   artista: Artista;
-  movimientoArtistico: Movimientoartistico;
+  movimiento: Movimientoartistico;
 
 
 
@@ -29,7 +29,7 @@ export class Obra {
     this.imagen = imagen;
     this.museo = museo;
     this.artista = artista;
-    this.movimientoArtistico = movimiento;
+    this.movimiento = movimiento;
 
 
   }
