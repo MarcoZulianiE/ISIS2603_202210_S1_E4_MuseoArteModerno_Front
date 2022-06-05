@@ -39,13 +39,13 @@ export class MuseoListComponent implements OnInit {
 
   ordenar () : void {
     if (this.tipoSort=='A..Z') {
-      this.museos = this.museos.sort((a,b)=> {
+      this.museos.sort((a,b)=> {
         if(a.nombre > b.nombre) return 1;
         if(a.nombre <= b.nombre) return -1;
         return 0;
       });
     } else if (this.tipoSort=='Z..A') {
-      this.museos = this.museos.sort((a,b)=> {
+      this.museos.sort((a,b)=> {
         if(a.nombre < b.nombre) return 1;
         if(a.nombre >= b.nombre) return -1;
         return 0;
