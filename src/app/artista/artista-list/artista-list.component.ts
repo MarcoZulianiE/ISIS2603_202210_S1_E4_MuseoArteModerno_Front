@@ -46,12 +46,15 @@ export class ArtistaListComponent implements OnInit {
         return 0;
       });
     } else if (this.tipoSort=='Z..A') {
-      var ordenado = this.artistas.sort((a,b)=> {
-        if(a.nombre < b.nombre) return 1;
-        if(a.nombre >= b.nombre) return -1;
-        return 0;
-      });
-      this.artistas = ordenado;
+      this.artistas = this.artistas.sort(this.funcSort());
+    }
+  }
+
+  funcSort () {
+    return function sortFunc (a : ArtistaDetail, b : ArtistaDetail) {
+      if(a.nombre < b.nombre) return 1;
+      if(a.nombre >= b.nombre) return -1;
+      return 0;
     }
   }
 
