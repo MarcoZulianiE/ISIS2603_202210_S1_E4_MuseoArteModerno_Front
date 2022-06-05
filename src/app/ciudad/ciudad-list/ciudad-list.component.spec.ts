@@ -36,8 +36,8 @@ describe('CiudadListComponent', () => {
     );
     component.ciudades = [
       new CiudadDetail(faker.datatype.number(),faker.lorem.sentence(),
-      faker.lorem.imageUrl(),
-      faker.image.sentence(),
+      faker.image.imageUrl(),
+      faker.lorem.sentence(),
       pais
       ),
     ];
