@@ -50,14 +50,8 @@ describe('CiudadListComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-  it('should have an img element ', () => {
-    expect(debug.query(By.css('img')).attributes['alt']).toEqual(
-      component.ciudades[0].nombre
-    );
-  });
 
-  it('should have a h5 element with card-title class', () => {
-    expect(debug.query(By.css('h5')).attributes['class']).toEqual( "card-title" );
-  });
+
+
 
 });
