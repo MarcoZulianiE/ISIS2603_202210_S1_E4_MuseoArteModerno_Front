@@ -3,7 +3,7 @@ img {
   width: 7rem;
 }
 
-img.ciudad {
+img.pais {
   height: 5rem;
   width: 5rem;
 }
@@ -31,11 +31,6 @@ h3 {
 
 .vertical-scrollable>.row {
   height: 14vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-.vertical-scrollable-2>.row {
-  height: 8vh;
   overflow-y: auto;
   overflow-x: hidden;
 }
